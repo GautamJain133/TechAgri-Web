@@ -4,8 +4,6 @@ import { Button } from "react-bootstrap";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
-//import app from "../firebase";
-//import { auth } from "../firebase";
 
 const Home = () => {
   const { logOut, user } = useUserAuth();

@@ -41,4 +41,16 @@ userRouter.post("/data", auth, async (req, res) => {
   }
 });
 
+userRouter.get("/check-authentication", auth, async (req, res) => {
+  try {
+    const cid = Company.findOne({ company_id: req.currentUser.uid });
+    const fid = Farmer.findOne({ farmer_id: req.currentUser.uid });
+    if (fid != null) res.json(1);
+    if (cid != null) res.json(2);
+    res.json(0);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 module.exports = userRouter;

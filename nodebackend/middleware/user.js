@@ -26,6 +26,7 @@ const auth = async (req, res, next) => {
 
     // request me hamko ek req.user milta hai ham usme verified.id se id dal denge taki hame body me id bhejni hi na pde
     req["currentUser"] = verified; // ab ham jb call back funtion likhege to wha pr req.user karne se hamko directly user ki id mil jayegi
+
     next();
   } catch (err) {
     console.log("error in middleware" + err.message);
