@@ -1,19 +1,41 @@
 const express = require("express");
 const auth = require("../middleware/user");
 const userRouter = express.Router();
-const User = require("../models/usermodel");
+const Farmer = require("../models/farmermodel");
+const Company = require("../models/companymodel");
 
-userRouter.post("/user", auth, async (req, res) => {
+userRouter.post("/data", auth, async (req, res) => {
   try {
+    if (req.type === 1) {
+      // he is a farmer'
+
+      let farmer = Farmer({
+        farmer_name: req.currentUser.name,
+        farmer_id: req.currentUser.uid,
+        farmer_phno: req.farmer_phno,
+        warehouse_address: req.warehouse_address,
+        farmer_pincode: req.farmer_pincode,
+      });
+
+      farmer = await farmer.save();
+
+      res.json(farmer);
+    } else {
+      //  he is a company
+      let company = Company({
+        company_name: req.company_name,
+        company_id: req.currentUser.uid,
+        company_phno: req.comapny_phno,
+        company_address: req.company_address,
+        company_pincode: req.company_pincode,
+      });
+
+      company = await company.save();
+
+      res.json(company);
+    }
+
     console.log(req.currentUser);
-    let user = User({
-      username: req.currentUser.name,
-      userid: req.currentUser.uid,
-    });
-
-    user = await user.save();
-
-    res.json(user);
   } catch (e) {
     res.status(500).json({ error: e.message });
   }

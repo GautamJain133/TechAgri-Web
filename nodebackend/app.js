@@ -1,8 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const auth = require("./middleware/user");
+
 const cors = require("cors");
-const userRouter = require("./routers/userrouter");
+const userRouter = require("./routers/userRouter");
 const PORT = 9000;
 const db =
   "mongodb+srv://gautam:JB6Onx60hHqc6t6u@cluster0.004vsbm.mongodb.net/userdata?retryWrites=true&w=majority";
