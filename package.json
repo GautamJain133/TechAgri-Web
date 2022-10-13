@@ -2,10 +2,12 @@
   "name": "react-auth",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:9000",
   "dependencies": {
     "@testing-library/jest-dom": "",
     "@testing-library/react": "",
     "@testing-library/user-event": "",
+    "axios": "^1.1.2",
     "bootstrap": "",
     "firebase": "",
     "react": "",
