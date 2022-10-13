@@ -70,5 +70,5 @@ let cropinfo = new mongoose.Schema({
   },
 });
 
-const Cropinfo = mongoose.model("Cropinfo", Cropinfo);
+const Cropinfo = mongoose.model("Cropinfo", cropinfo);
 module.exports = Cropinfo;
