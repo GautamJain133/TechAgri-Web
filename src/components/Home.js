@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
+import Navbar from "./Navbar";
 //import app from "../firebase";
 //import { auth } from "../firebase";
 
@@ -58,6 +59,8 @@ const Home = () => {
 
   return (
     <>
+      <Navbar/>
+
       <div className="p-4 box mt-3 text-center">
         Hello Welcome <br />
         {user && user.email}
