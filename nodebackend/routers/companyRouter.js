@@ -7,9 +7,9 @@ companyRouter.get("/cropinfo", auth, async (req, res) => {
   try {
     //  select * from cropinfo where cropname = 'this' and  harvestmonth between this to this
 
-    let start = req.smonth;
-    let end = req.emonth;
-    let cropname = req.cropname;
+    let start = req.body.smonth;
+    let end = req.body.emonth;
+    let cropname = req.body.cropname;
     const cropdata = await Cropinfo.find({
       expected_harvest_month: { $lte: start, $gte: end },
       crop_name: cropname,
@@ -21,3 +21,5 @@ companyRouter.get("/cropinfo", auth, async (req, res) => {
     res.status(500).json({ error: e.message });
   }
 });
+
+module.exports = companyRouter;
