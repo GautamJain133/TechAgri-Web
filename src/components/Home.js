@@ -20,7 +20,7 @@ const Home = () => {
       console.log(error.message);
     }
   };
-
+//
   const createToken = async () => {
     const token = user && (await user.getIdToken());
 
