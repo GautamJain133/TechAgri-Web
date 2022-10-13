@@ -63,20 +63,6 @@ const Home = () => {
         {user && user.email}
       </div>
 
-      <div>
-        <form onSubmit={handleSubmit}>
-          <label>
-            Enter your name:
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
-          <input type="submit" />
-        </form>
-      </div>
-
       <div className="d-grid gap-2">
         <Button variant="primary" onClick={handleLogout}>
           Log out
