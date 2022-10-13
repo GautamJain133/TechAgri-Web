@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
+import Navbar from "./Navbar";
 
 const Home = () => {
   const { logOut, user } = useUserAuth();
@@ -18,7 +19,7 @@ const Home = () => {
       console.log(error.message);
     }
   };
-
+  //
   const createToken = async () => {
     const token = user && (await user.getIdToken());
 
@@ -56,23 +57,11 @@ const Home = () => {
 
   return (
     <>
+      <Navbar />
+
       <div className="p-4 box mt-3 text-center">
         Hello Welcome <br />
         {user && user.email}
-      </div>
-
-      <div>
-        <form onSubmit={handleSubmit}>
-          <label>
-            Enter your name:
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
-          <input type="submit" />
-        </form>
       </div>
 
       <div className="d-grid gap-2">

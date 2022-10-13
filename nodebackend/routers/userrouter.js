@@ -10,11 +10,11 @@ userRouter.post("/data", auth, async (req, res) => {
       // he is a farmer'
 
       let farmer = Farmer({
-        farmer_name: req.currentUser.name,
+        farmer_name: req.name,
         farmer_id: req.currentUser.uid,
-        farmer_phno: req.farmer_phno,
-        warehouse_address: req.warehouse_address,
-        farmer_pincode: req.farmer_pincode,
+        farmer_phno: req.phno,
+        warehouse_address: req.address,
+        farmer_pincode: req.pincode,
       });
 
       farmer = await farmer.save();
@@ -23,11 +23,11 @@ userRouter.post("/data", auth, async (req, res) => {
     } else {
       //  he is a company
       let company = Company({
-        company_name: req.company_name,
+        company_name: req.name,
         company_id: req.currentUser.uid,
-        company_phno: req.comapny_phno,
-        company_address: req.company_address,
-        company_pincode: req.company_pincode,
+        company_phno: req.phno,
+        company_address: req.address,
+        company_pincode: req.pincode,
       });
 
       company = await company.save();
