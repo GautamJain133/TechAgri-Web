@@ -907,7 +907,9 @@ body {
   # Team
   --------------------------------------------------------------*/
   .team {
-    background: #fff;
+    background: #fef8f5;
+    border-bottom: 2px solid #fcebe3;
+    border-top:  2px solid #fcebe3 ;
     padding: 60px 0;
   }
   
