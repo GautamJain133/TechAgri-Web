@@ -7,17 +7,17 @@ farmerRouter.post("/crop-info", auth, async (req, res) => {
   try {
     let cropinfo = Cropinfo({
       farmer_id: req.currentUser.uid,
-      sowing_month: req.sowing_month,
-      sowing_year: req.sowing_year,
-      crop_name: req.crop_name,
-      pestiside_used: req.pesticide_used,
-      fertilizer_used: req.fertilizer_used,
-      expected_harvested_year: req.expected_harvested_year,
-      expected_harvested_month: req.expected_harvested_month,
-      expected_quantity_produce: req.expected_quantity_produce,
-      soil_contained_nitrogen: req.soil_contained_nitrogen,
-      soil_contained_phosphurus: req.soil_contained_phosphurus,
-      soil_ph: req.soil_ph,
+      sowing_month: req.body.sowing_month,
+      sowing_year: req.body.sowing_year,
+      crop_name: req.body.crop_name,
+      pestiside_used: req.body.pesticide_used,
+      fertilizer_used: req.body.fertilizer_used,
+      expected_harvested_year: req.body.expected_harvested_year,
+      expected_harvested_month: req.body.expected_harvested_month,
+      expected_quantity_produce: req.body.expected_quantity_produce,
+      soil_contained_nitrogen: req.body.soil_contained_nitrogen,
+      soil_contained_phosphurus: req.body.soil_contained_phosphurus,
+      soil_ph: req.body.soil_ph,
     });
 
     cropinfo = await cropinfo.save();
