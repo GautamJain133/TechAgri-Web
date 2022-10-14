@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import {Link} from 'react-router-dom';
 
 function Navbarhome() {
+
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
@@ -21,6 +22,7 @@ function Navbarhome() {
               About
             </Nav.Link>
           </Nav>
+          {}
           <Link to="/signup">Login</Link>
         </Navbar.Collapse>
       </Container>
