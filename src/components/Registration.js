@@ -23,22 +23,18 @@ const Reg = () => {
   const [contact, setContact] = useState();
   const [pincode, setPincode] = useState();
 
-  const postData = async (e) => {
-    e.preventDefault();
-    const header = await createToken();
+    const postData = async(e) => {
+        e.preventDefault();
+        const header = await createToken();
 
-    let response = await axios.post(
-      "/data",
-      {
-        type: type,
-        name: name,
-        phno: contact,
-        address: address,
-        pincode: pincode,
-      },
-      header
-    );
-  };
+       let response = await axios.post("/data",{
+            type: type,
+            name: name,
+            phno: contact,
+            address: address,
+            pincode: pincode
+        },header);
+    }
 
   const createToken = async () => {
     const token = user && (await user.getIdToken());
@@ -52,9 +48,14 @@ const Reg = () => {
     return payloadHeader;
   };
 
-  // let name, value;
 
-  // const handleInputs=(e)=>{
+
+
+
+
+    // let name, value;
+    
+    // const handleInputs=(e)=>{
 
   //     name=e.target.name;
   //     value=e.target.value;
@@ -82,87 +83,46 @@ const Reg = () => {
   // 	}
   // };
 
-  return (
-    <>
-      <div className="reg_container">
-        <div className="role">
-          <h5>Select your role</h5>
-          <div className="input-field select_role">
-            <div className="select">
-              <select
-                className="form-control fs-6"
-                style={{ color: "#827B75" }}
-                name="type"
-                value={type}
-                onchanged={(e) => setType(e.target.value)}
-                id="select_role"
-              >
-                <option value="1">Production Company</option>
-                <option value="2">Farmer</option>
-              </select>
+    return (
+      <>
+        <div className="reg_container">
+            <div className="role">
+            <h5>Select your role</h5>
+            <div className="input-field select_role">
+                <div className="select">
+                    <select className="form-control fs-6" style={{color: "#827B75"}} name="type" value={type} onChange={(e)=>setType(e.target.value)} id="select_role">
+                        <option value="1">Production Company</option>
+                        <option value="2">Farmer</option>
+                    </select>
+                </div>
+            </div> 
             </div>
-          </div>
-        </div>
 
-        <div className="form">
-          <div className="form-group">
-            <label htmlFor="name">Production company name</label>
-            <input
-              type="text"
-              name="name"
-              value={name}
-              onchanged={(e) => setName(e.target.value)}
-              className="form-control"
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="address">Company address</label>
-            <input
-              type="text"
-              name="address"
-              value={address}
-              onchanged={(e) => setAddress(e.target.value)}
-              className="form-control"
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="contact">Contact number</label>
-            <input
-              type="number"
-              name="contact"
-              value={contact}
-              onchanged={(e) => setContact(e.target.value)}
-              className="form-control"
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="pincode">Pincode</label>
-            <input
-              type="number"
-              name="pincode"
-              value={pincode}
-              onchanged={(e) => setPincode(e.target.value)}
-              className="form-control"
-              required
-            />
-          </div>
-        </div>
-        <a href="# ">
-          <button
-            type="submit"
-            style={{ marginTop: "20px" }}
-            className="sub-button"
-            onClick={postData}
-          >
-            SUBMIT
-          </button>
-        </a>
-      </div>
-    </>
-  );
-};
-
-export default Reg;
+                <div className="form">
+                        <div className="form-group">
+                            <label htmlFor="name">Production company name</label>
+                            <input type="text" name="name" value={name} onChange={(e)=>setName(e.target.value)} className="form-control" required/>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="address">Company address</label>
+                            <input type="text" name="address" value={address} onChange={(e)=>setAddress(e.target.value)} className="form-control" required/>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="contact">Contact number</label>
+                            <input type="number" name="contact" value={contact} onChange={(e)=>setContact(e.target.value)} className="form-control" required/>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="pincode">Pincode</label>
+                            <input type="number" name="pincode" value={pincode}  onChange={(e)=>setPincode(e.target.value)}className="form-control" required/>
+                        </div>
+                    </div>
+                    <a href="# ">
+                        <button type="submit" style={{marginTop:"20px"}} className="sub-button" onClick={postData}>SUBMIT</button>
+                    </a>
+                </div>
+      </>
+    );
+  };
+  
+  export default Reg;
+  
