@@ -34,7 +34,8 @@ const Login = () => {
   };
 
   return (
-    <>
+    <div>
+    <div className="container">
       <div className="p-4 box">
         <h2 className="mb-3">Login</h2>
         {error && <Alert variant="danger">{error}</Alert>}
@@ -73,7 +74,8 @@ const Login = () => {
       <div className="p-4 box mt-3 text-center">
         Don't have an account? <Link to="/signup">Sign up</Link>
       </div>
-    </>
+    </div>
+    </div>
   );
 };
 

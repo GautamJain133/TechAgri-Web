@@ -10,7 +10,6 @@ import Reg from "./components/Registration";
 
 function App() {
   return (
-    <Container style={{ width: "400px" }}>
       <Row>
         <Col>
           <UserAuthContextProvider>
@@ -30,7 +29,6 @@ function App() {
           </UserAuthContextProvider>
         </Col>
       </Row>
-    </Container>
   );
 }
 

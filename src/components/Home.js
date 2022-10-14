@@ -4,8 +4,7 @@ import { Button } from "react-bootstrap";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
-import Navbar from "../components/Navbar.js";
-import Firsthome from "../components/Firsthome.js"
+import Navbar from "./Navbar";
 //import app from "../firebase";
 //import { auth } from "../firebase";
 
@@ -22,7 +21,7 @@ const Home = () => {
       console.log(error.message);
     }
   };
-//
+  //
   const createToken = async () => {
     const token = user && (await user.getIdToken());
 
@@ -60,9 +59,9 @@ const Home = () => {
 
   return (
     <>
-      <Navbar/>
+      <Navbarhome />
 
-      {/* <div className="p-4 box mt-3 text-center">
+      <div className="p-4 box mt-3 text-center">
         Hello Welcome <br />
         {user && user.email}
       </div>
@@ -72,10 +71,7 @@ const Home = () => {
         <Button variant="primary" onClick={handleLogout}>
           Log out
         </Button>
-      </div> */}
-
-      <Firsthome/>
-
+      </div>
     </>
   );
 };

@@ -6,15 +6,16 @@ const Company = require("../models/companymodel");
 
 userRouter.post("/data", auth, async (req, res) => {
   try {
+    console.log(req);
     if (req.type === 1) {
       // he is a farmer'
 
       let farmer = Farmer({
-        farmer_name: req.name,
+        farmer_name: req.body.name,
         farmer_id: req.currentUser.uid,
-        farmer_phno: req.phno,
-        warehouse_address: req.address,
-        farmer_pincode: req.pincode,
+        farmer_phno: req.body.phno,
+        warehouse_address: req.body.address,
+        farmer_pincode: req.body.pincode,
       });
 
       farmer = await farmer.save();
@@ -23,11 +24,11 @@ userRouter.post("/data", auth, async (req, res) => {
     } else {
       //  he is a company
       let company = Company({
-        company_name: req.name,
-        company_id: req.currentUser.uid,
-        company_phno: req.phno,
-        company_address: req.address,
-        company_pincode: req.pincode,
+        company_name: req.body.name,
+        company_id: req.body.currentUser.uid,
+        company_phno: req.body.phno,
+        company_address: req.body.address,
+        company_pincode: req.body.pincode,
       });
 
       company = await company.save();
@@ -36,6 +37,18 @@ userRouter.post("/data", auth, async (req, res) => {
     }
 
     console.log(req.currentUser);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+userRouter.get("/check-authentication", auth, async (req, res) => {
+  try {
+    const cid = Company.findOne({ company_id: req.currentUser.uid });
+    const fid = Farmer.findOne({ farmer_id: req.currentUser.uid });
+    if (fid != null) res.json(1);
+    if (cid != null) res.json(2);
+    res.json(0);
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
