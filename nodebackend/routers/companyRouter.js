@@ -33,8 +33,16 @@ companyRouter.post("/cropinfo", auth, async (req, res) => {
     const crop = Cropinfo.find({ crop_name: cropname });
     const companyid = req.currentUser.uid;
 
-    function distance(farmerid) {
+    async function distance(farmerid) {
       const farmer = Farmer.find({ farmer_id: farmerid });
+      const farmer_pincode = farmer.farmer_pincode;
+      const company_pincode = req.currentUser.uid;
+
+      // return dstance;
+
+      return Math.abs(company_pincode - farmer_pincode);
+
+      //"https://maps.googleapis.com/maps/api/distancematrix/xml?origins=" + Convert.ToString(origin) + "&destinations=" + Convert.ToString(destination) + "&key='MY key'"
     }
 
     crop.sort((a, b) => distance(a.famerid) < distance(b.famerid));
