@@ -6,10 +6,9 @@ import Navbar from 'react-bootstrap/Navbar';
 function Navbarhome() {
   return (
     <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home" style={{color: "green"}}>Kisaan</Navbar.Brand>
+        <Navbar.Brand href="#home" style={{color: "green", marginLeft: "15px"}}>Kisaan</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className="d-flex justify-content-end align-items-end me-2">
           <Nav className="me-auto ms-2">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">about</Nav.Link>
@@ -27,7 +26,6 @@ function Navbarhome() {
             </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
-      </Container>
     </Navbar>
   );
 }
