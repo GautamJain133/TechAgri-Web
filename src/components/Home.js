@@ -4,7 +4,8 @@ import { Button } from "react-bootstrap";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar.js";
+import Firsthome from "../components/Firsthome.js"
 //import app from "../firebase";
 //import { auth } from "../firebase";
 
@@ -61,16 +62,20 @@ const Home = () => {
     <>
       <Navbar/>
 
-      <div className="p-4 box mt-3 text-center">
+      {/* <div className="p-4 box mt-3 text-center">
         Hello Welcome <br />
         {user && user.email}
       </div>
+
 
       <div className="d-grid gap-2">
         <Button variant="primary" onClick={handleLogout}>
           Log out
         </Button>
-      </div>
+      </div> */}
+
+      <Firsthome/>
+
     </>
   );
 };
