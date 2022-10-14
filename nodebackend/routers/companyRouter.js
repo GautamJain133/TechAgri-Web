@@ -30,7 +30,7 @@ companyRouter.post("/cropinfo", auth, async (req, res) => {
     // input --> cropname
     const cropname = req.body.cropname;
 
-    const crop = Cropinfo.find({ crop_name: cropname });
+    const crop = await Cropinfo.find({ crop_name: cropname });
     const companyid = req.currentUser.uid;
 
     async function distance(farmerid) {
@@ -48,6 +48,31 @@ companyRouter.post("/cropinfo", auth, async (req, res) => {
     crop.sort((a, b) => distance(a.famerid) < distance(b.famerid));
 
     // cpmpany pincode check with all farmer pincode of that crop
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+companyRouter.post("/highest-production", auth, async (req, res) => {
+  try {
+    const crop = await Cropinfo.find({ crop_name: req.body.cropname });
+
+    let month = new Map();
+    for (let i = 0; i < crop.length; i++) {
+      month[crop.expected_harvest_month] += crop.expected_quantity_produce;
+    }
+
+    let mth;
+    let qty = -1;
+
+    for (let [key, value] of month) {
+      if (value > qty) {
+        qty = value;
+        mth = key;
+      }
+    }
+
+    res.json({ month: mth });
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
