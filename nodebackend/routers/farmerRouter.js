@@ -2,6 +2,7 @@ const express = require("express");
 const auth = require("../middleware/user");
 const farmerRouter = express.Router();
 const Cropinfo = require("../models/cropinfomodel");
+const Crops = require("../models/cropmodel");
 
 farmerRouter.post("/crop-info", auth, async (req, res) => {
   try {
@@ -23,6 +24,26 @@ farmerRouter.post("/crop-info", auth, async (req, res) => {
     cropinfo = await cropinfo.save();
 
     res.json(cropinfo);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+farmerRouter.post("/crop-suggestion", async (req, res) => {
+  try {
+    let Result = await Crops.find({
+      $and: [
+        { temperature: req.body.temperature },
+        { humidity: req.body.humidity },
+        { ph: req.body.ph },
+        { rainfall: req.body.rainfall },
+      ],
+    });
+
+    //let Result = await Crops.find({ temperature: req.body.temperature });
+
+    console.log("res:" + Result);
+    res.json({ Result });
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
