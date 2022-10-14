@@ -61,7 +61,7 @@ const Home = () => {
     <>
       <Navbarhome />
 
-      <div className="p-4 box mt-3 text-center">
+      {/* <div className="p-4 box mt-3 text-center">
         Hello Welcome <br />
         {user && user.email}
       </div>
@@ -70,7 +70,7 @@ const Home = () => {
         <Button variant="primary" onClick={handleLogout}>
           Log out
         </Button>
-      </div>
+      </div> */}
     </>
   );
 };

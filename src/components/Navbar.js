@@ -1,27 +1,31 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import {Link} from 'react-router-dom';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Navbarhome() {
   return (
     <Navbar bg="light" expand="lg">
-      <Container fluid>
-        <Navbar.Brand href="#">Kisaan</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Contact</Nav.Link>
-            <Nav.Link href="#" disabled>
-              About
-            </Nav.Link>
+      <Container>
+        <Navbar.Brand href="#home" style={{color: "green"}}>Kisaan</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto ms-2">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">about</Nav.Link>
+            <Nav.Link href="#link">Login</Nav.Link>
+            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown> */}
           </Nav>
-          <Link to="/signup">Login</Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
