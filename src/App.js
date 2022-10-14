@@ -7,6 +7,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Reg from "./components/Registration";
 import Company from "./components/Company";
+import Farmer from "./components/Farmer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/login" element={<Login />}/>
               <Route path="/registration" element={<Reg/>} />
               <Route path="/company" element={<Company/>} />
+              <Route path="/farmer" element={<Farmer/>} />
             </Routes>
           </UserAuthContextProvider>
   );

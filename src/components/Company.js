@@ -6,9 +6,9 @@ import { Card } from 'react-bootstrap';
 function Company(){
 
     return(
-        <div>
+        <>
         <Navbarhome/>
-            <div className="d-flex flex-row align-items-center justify-content-center"/>
+            <div div className="d-flex flex-row align-items-center justify-content-center">
                 <div className="d-flex justify-content-center align-items-center w-100 h-100 ps-lg-0 ps-sm-3 sec-bar p-4 ps-3 mb-4">
                         <input
                         className=" ps-md-3 ps-3 ms-5"
@@ -37,6 +37,7 @@ function Company(){
 
         </div>
         </div>
+        </>
     )
 }
 
