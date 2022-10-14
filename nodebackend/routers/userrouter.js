@@ -6,6 +6,7 @@ const Company = require("../models/companymodel");
 
 userRouter.post("/data", auth, async (req, res) => {
   try {
+    console.log(req);
     if (req.type === 1) {
       // he is a farmer'
 

@@ -24,18 +24,6 @@ const Reg = () => {
     const[contact,setContact] = useState();
     const[pincode,setPincode] = useState();
 
-    const postData = async(e) => {
-        e.preventdefault();
-        const header = await createToken();
-
-       let response = await axios.post("/data",{
-            type: type,
-            name: name,
-            phno: contact,
-            address: address,
-            pincode: pincode
-        },header);
-    }
 
     const createToken = async () => {
         const token = user && (await user.getIdToken());
@@ -48,6 +36,23 @@ const Reg = () => {
         };
         return payloadHeader;
       };
+
+
+
+    const postData = async(e) => {
+        e.preventDefault();
+        const header = await createToken();
+        console.log("header is here"+header);
+       let response = await axios.post("/data",{
+            "name": name,
+            "type": type,
+            "phno": contact,
+            "address": address,
+            "pincode": pincode
+        },header);
+
+        console.log(response);
+    }
 
 
 
@@ -91,32 +96,33 @@ const Reg = () => {
             <h5>Select your role</h5>
             <div className="input-field select_role">
                 <div className="select">
-                    <select className="form-control fs-6" style={{color: "#827B75"}} name="type" value={type} onchange={(e)=>setType(e.target.value)} id="select_role">
+                    <select className="form-control fs-6" style={{color: "#827B75"}} name="type" value={type} onChange={(e)=>setType(e.target.value)} id="select_role">
                         <option value="1">Production Company</option>
                         <option value="2">Farmer</option>
                     </select>
                 </div>
             </div> 
             </div>
-
+            {}
                 <div className="form">
                         <div className="form-group">
                             <label htmlFor="name">Production company name</label>
-                            <input type="text" name="name" value={name} onchange={(e)=>setName(e.target.value)} className="form-control" required/>
+                            <input type="text" name="name" value={name} onChange={(e)=>setName(e.target.value)} className="form-control" required/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="address">Company address</label>
-                            <input type="text" name="address" value={address} onchange={(e)=>setAddress(e.target.value)} className="form-control" required/>
+                            <input type="text" name="address" value={address} onChange={(e)=>setAddress(e.target.value)} className="form-control" required/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="contact">Contact number</label>
-                            <input type="number" name="contact" value={contact} onchange={(e)=>setContact(e.target.value)} className="form-control" required/>
+                            <input type="number" name="contact" value={contact} onChange={(e)=>setContact(e.target.value)} className="form-control" required/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="pincode">Pincode</label>
-                            <input type="number" name="pincode" value={pincode}  onchange={(e)=>setPincode(e.target.value)}className="form-control" required/>
+                            <input type="number" name="pincode" value={pincode}  onChange={(e)=>setPincode(e.target.value)}className="form-control" required/>
                         </div>
                     </div>
+
                     <a href="# ">
                         <button type="submit" style={{marginTop:"20px"}} className="sub-button" onClick={postData}>SUBMIT</button>
                     </a>
