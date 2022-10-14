@@ -5,11 +5,11 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Navbarhome() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg" style={{backgroundColor: "#B5DEFC", padding: "10px"}}>
         <Navbar.Brand href="#home" style={{color: "green", marginLeft: "15px"}}>Kisaan</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="d-flex justify-content-end align-items-end me-2">
-          <Nav className="me-auto ms-2">
+        <Navbar.Collapse id="navbar-text" className="collapse navbar-collapse">
+          <Nav className="ms-2 me-0">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">about</Nav.Link>
             <Nav.Link href="#link">Login</Nav.Link>
