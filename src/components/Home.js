@@ -5,7 +5,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
 import Navbar from "./Navbar";
-import Navbarhome from "./Navbar";
 //import app from "../firebase";
 //import { auth } from "../firebase";
 
@@ -62,7 +61,7 @@ const Home = () => {
     <>
       <Navbarhome />
 
-      <div className="p-4 box mt-3 text-center">
+      {/* <div className="p-4 box mt-3 text-center">
         Hello Welcome <br />
         {user && user.email}
       </div>
@@ -72,7 +71,7 @@ const Home = () => {
         <Button variant="primary" onClick={handleLogout}>
           Log out
         </Button>
-      </div>
+      </div> */}
     </>
   );
 };
