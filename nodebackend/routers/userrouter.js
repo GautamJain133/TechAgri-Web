@@ -12,7 +12,7 @@ userRouter.post("/data", auth, async (req, res) => {
 
       let farmer = Farmer({
         farmer_name: req.body.name,
-        farmer_id: req.body.currentUser.uid,
+        farmer_id: req.currentUser.uid,
         farmer_phno: req.body.phno,
         warehouse_address: req.body.address,
         farmer_pincode: req.body.pincode,

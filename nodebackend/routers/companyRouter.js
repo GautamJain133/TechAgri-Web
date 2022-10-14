@@ -1,9 +1,10 @@
 const express = require("express");
 const { auth } = require("firebase-admin");
 const Cropinfo = require("../models/cropinfomodel");
+const Farmer = require("../models/farmermodel");
 const companyRouter = express.Router();
 
-companyRouter.get("/cropinfo", auth, async (req, res) => {
+companyRouter.post("/cropinfo", auth, async (req, res) => {
   try {
     //  select * from cropinfo where cropname = 'this' and  harvestmonth between this to this
 
@@ -17,6 +18,28 @@ companyRouter.get("/cropinfo", auth, async (req, res) => {
 
     console.log(cropdata);
     res.json(Cropinfo);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+companyRouter.post("/cropinfo", auth, async (req, res) => {
+  try {
+    // shortest path
+    // input --> company pincode
+    // input --> cropname
+    const cropname = req.body.cropname;
+
+    const crop = Cropinfo.find({ crop_name: cropname });
+    const companyid = req.currentUser.uid;
+
+    function distance(farmerid) {
+      const farmer = Farmer.find({ farmer_id: farmerid });
+    }
+
+    crop.sort((a, b) => distance(a.famerid) < distance(b.famerid));
+
+    // cpmpany pincode check with all farmer pincode of that crop
   } catch (e) {
     res.status(500).json({ error: e.message });
   }

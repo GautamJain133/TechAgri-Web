@@ -1,10 +1,6 @@
 const mongoose = require("mongoose");
 
 let cropSchema = new mongoose.Schema({
-  sno: {
-    type: Number,
-    trim: true,
-  },
   temperature: {
     type: String,
     trim: true,
