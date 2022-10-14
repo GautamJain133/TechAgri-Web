@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
-import Navbarhome from "./Navbar";
+import Navbar from "./Navbar";
 //import app from "../firebase";
 //import { auth } from "../firebase";
 
