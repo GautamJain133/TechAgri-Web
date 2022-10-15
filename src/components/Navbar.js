@@ -57,7 +57,7 @@ function Navbarhome() {
 
   return (
     <Navbar expand="lg" style={{backgroundColor: "#B5DEFC", padding: "10px"}}>
-        <Navbar.Brand href="#home" style={{color: "green", marginLeft: "15px"}}>Kisaan</Navbar.Brand>
+        <Navbar.Brand href="#home" style={{color: "green", marginLeft: "15px"}} className="fs-4">Kisaan</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="navbar-text" className="collapse navbar-collapse">
           <Nav className="ms-2 me-0">
@@ -68,7 +68,7 @@ function Navbarhome() {
               <NavDropdown
               title={user.email}
               id="basic-nav-dropdown"
-              className="nav-link fs-6 p-0 mb-1 mt-1 ms-5"
+              className="nav-link fs-6 p-0 ms-5"
             >
               <NavDropdown.Item href="# ">
                 My Profile

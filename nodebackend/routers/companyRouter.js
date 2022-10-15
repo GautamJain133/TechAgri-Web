@@ -55,6 +55,8 @@ companyRouter.post("/cropinfo", auth, async (req, res) => {
 
 companyRouter.post("/highest-production", auth, async (req, res) => {
   try {
+
+    console.log("hello paagal");
     const crop = await Cropinfo.find({ crop_name: req.body.cropname });
 
     let month = new Map();
