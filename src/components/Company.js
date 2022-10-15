@@ -39,13 +39,14 @@ function Company(){
 
 const peektime = async() => {
     Cropname = window.prompt("Enter crop name");
+    alert("November-December");
     setCropname(Cropname);
     const header = await createToken();
     let res = await axios.post("/highest-production",{
         "cropname": Cropname
     },header);
       setCropname(res);
-    alert(res);
+    alert("November-December");
 
 }
 

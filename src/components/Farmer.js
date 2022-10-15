@@ -15,7 +15,7 @@ function Farmer() {
                 <div className="card">
                     <div className="card-body text-center">
                         <div className="card-img pt-2 pb-3"> <img src={("../assets/img/image1.png")} alt=""/></div>
-                        <div className="name h5">Give your crop data</div>
+                        <div className="name h5"><a href="http://127.0.0.1:5500/html_files/crop-data-form.html">Give your crop data</a></div>
                         <div className="testimonial"> Provide information about your crop and hence connect to the companies for selling </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ function Farmer() {
                 <div className="card">
                     <div className="card-body text-center ms-0" style={{paddingTop:"30px", paddingBottom:"35px", paddingLeft:"80px", paddingRight:"80px"}}>
                         <div className="card-img pt-2 pb-3"><img src={("../assets/img/image1.png")} alt=""/> </div>
-                        <div className="name h5">Get weather alerts</div>
+                        <div className="name h5" style={{cursor: "pointer"}} onClick={(e)=>alert("According to your location\nTemperature: 26℃\nPrecipitation: 1%\nHumidity: 54%\nWind: 5km/h")}><a href="#">Get weather alerts</a></div>
                         <div className="testimonial"> Get latest weather alerts for your location.</div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ function Farmer() {
                 <div className="card">
                     <div className="card-body text-center">
                         <div className="card-img pt-2 pb-3"> <img src={("../assets/img/image1.png")} alt=""/> </div>
-                        <div className="name h5">Best Practice Suggestion</div>
+                        <div className="name h5"><a href="http://127.0.0.1:5500/html_files/practice.html">Best Practice Suggestion</a></div>
                         <div className="testimonial"> Know about the latest farming and irrigation techniques to maximize their production </div>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ function Farmer() {
                 <div className="card">
                     <div className="card-body text-center" style={{padding:"20px", paddingBottom:"40px"}}>
                         <div className="card-img pt-2 pb-3"> <img src={("../assets/img/image1.png")} alt=""/> </div>
-                        <div className="name h5">Crop Suggestion</div>
+                        <div className="name h5"><a href="#">Crop Suggestion</a></div>
                         <div className="testimonial"> Get crop suggestion based on the soil content of your land </div>
                     </div>
                 </div>
