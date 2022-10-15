@@ -112,7 +112,7 @@ const Reg = () => {
             />
           </div>
         </div>
-        <a href="# ">
+        <a href="#">
           <button
             type="submit"
             style={{ marginTop: "20px" }}

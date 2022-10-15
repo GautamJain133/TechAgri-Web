@@ -1,6 +1,7 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
+//import { useState } from "react";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -8,27 +9,45 @@ import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Reg from "./components/Registration";
 import Company from "./components/Company";
 import Farmer from "./components/Farmer";
+// import { useUserAuth } from "./context/UserAuthContext";
+// import axios from "axios";
 
 function App() {
+  // const { user } = useUserAuth();
+  // const createToken = async () => {
+  //   const token = user && (await user.getIdToken());
+
+  //   const payloadHeader = {
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       "x-auth-token": `${token}`,
+  //     },
+  //   };
+  //   return payloadHeader;
+  // };
+
   return (
-          <UserAuthContextProvider>
-            <Routes>
-              <Route
-                path="/home"
-                element={
-                  <ProtectedRoute>
-                    <Home />
-                  </ProtectedRoute>
-                }
-              />
-              <Route path="/" element={<Home />} />
-              <Route path="/signup" element={<Signup />} />
-              <Route path="/login" element={<Login />}/>
-              <Route path="/registration" element={<Reg/>} />
-              <Route path="/company" element={<Company/>} />
-              <Route path="/farmer" element={<Farmer/>} />
-            </Routes>
-          </UserAuthContextProvider>
+    <UserAuthContextProvider>
+      <Routes>
+        <Route
+          path="/home"
+          element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/"
+          element=/*{check === 3 ? <Home /> : <Navigate replace to={"hello"} />*/ <Home />
+        />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Reg />} />
+        <Route path="/company" element={<Company />} />
+        <Route path="/farmer" element={<Farmer />} />
+      </Routes>
+    </UserAuthContextProvider>
   );
 }
 
