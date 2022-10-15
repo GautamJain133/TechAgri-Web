@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
 import Navbarhome from "./Navbar";
+import { Link } from "react-router-dom";
 import "../Styles/style.css";
 import {
   FaTwitter,
