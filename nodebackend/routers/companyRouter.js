@@ -1,5 +1,5 @@
 const express = require("express");
-const { auth } = require("firebase-admin");
+const auth = require("../middleware/user");
 const Cropinfo = require("../models/cropinfomodel");
 const Farmer = require("../models/farmermodel");
 const companyRouter = express.Router();
@@ -55,7 +55,6 @@ companyRouter.post("/cropinfo", auth, async (req, res) => {
 
 companyRouter.post("/highest-production", auth, async (req, res) => {
   try {
-
     console.log("hello paagal");
     const crop = await Cropinfo.find({ crop_name: req.body.cropname });
 
