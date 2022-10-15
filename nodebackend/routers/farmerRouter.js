@@ -49,4 +49,14 @@ farmerRouter.post("/crop-suggestion", async (req, res) => {
   }
 });
 
+farmerRouter.post("/allfarmers", async (req, res) => {
+  try {
+    let Result = await Crops.find({});
+    console.log("res:" + Result);
+    res.json(Result);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 module.exports = farmerRouter;
