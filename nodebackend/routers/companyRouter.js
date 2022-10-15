@@ -78,4 +78,17 @@ companyRouter.post("/highest-production", auth, async (req, res) => {
   }
 });
 
+companyRouter.post("/pest-filter", auth, async (req, res) => {
+  try {
+    //  select * from cropinfo where cropname = 'this' and  harvestmonth between this to this
+
+    let pestname = req.body.pestname;
+
+    // console.log(cropdata);
+    res.json(Cropinfo);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 module.exports = companyRouter;

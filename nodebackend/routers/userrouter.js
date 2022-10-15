@@ -7,7 +7,7 @@ const Company = require("../models/companymodel");
 userRouter.post("/data", auth, async (req, res) => {
   try {
     console.log(req.body);
-    if (req.type === "1") {
+    if (req.body.type === "1") {
       // he is a farmer'
 
       let farmer = Farmer({
@@ -47,12 +47,16 @@ userRouter.post("/data", auth, async (req, res) => {
 
 userRouter.get("/check-authentication", auth, async (req, res) => {
   try {
-    const cid = Company.findOne({ company_id: req.currentUser.uid });
-    const fid = Farmer.findOne({ farmer_id: req.currentUser.uid });
+    const cid = await Company.findOne({ company_id: req.currentUser.uid });
+    console.log("1");
+    const fid = await Farmer.findOne({ farmer_id: req.currentUser.uid });
+    console.log("fid is " + fid);
+    console.log("cid is " + cid);
     if (fid != null) res.json(1);
-    if (cid != null) res.json(2);
-    res.json(0);
+    else if (cid != null) res.json(2);
+    else res.json(0);
   } catch (e) {
+    console.log("3");
     res.status(500).json({ error: e.message });
   }
 });
