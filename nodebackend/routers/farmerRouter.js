@@ -3,6 +3,7 @@ const auth = require("../middleware/user");
 const farmerRouter = express.Router();
 const Cropinfo = require("../models/cropinfomodel");
 const Crops = require("../models/cropmodel");
+const Farmer = require("../models/farmermodel");
 
 farmerRouter.post("/crop-info", auth, async (req, res) => {
   try {
@@ -49,9 +50,9 @@ farmerRouter.post("/crop-suggestion", async (req, res) => {
   }
 });
 
-farmerRouter.post("/allfarmers", async (req, res) => {
+farmerRouter.get("/allfarmers", async (req, res) => {
   try {
-    let Result = await Crops.find({});
+    let Result = await Farmer.find({});
     console.log("res:" + Result);
     res.json(Result);
   } catch (e) {

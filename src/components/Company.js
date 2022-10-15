@@ -29,12 +29,25 @@ function Company() {
     return payloadHeader;
   };
   //   event.preventDefault();
-  console.log("test");
 
   let [Cropname, setCropname] = useState("");
 
   // console.log("header is sfjsdkfj " + header.headers["x-auth-token"]);
-  console.log("test");
+
+
+  const[Data, setData] = useState([]);
+
+  React.useEffect(() => {
+    axios
+      .get("/allfarmers")
+      .then((response) => {
+        setData(response.data);
+        console.log(Data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   const peektime = async () => {
     Cropname = window.prompt("Enter crop name");
