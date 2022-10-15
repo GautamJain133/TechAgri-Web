@@ -24,7 +24,7 @@ const Signup = () => {
 
   return (
     <>
-    <div className="container">
+    <div className="container" style={{width: "40%", marginTop: "50px"}}>
       <div className="p-4 box">
         <h2 className="mb-3">Signup</h2>
         {error && <Alert variant="danger">{error}</Alert>}

@@ -35,8 +35,8 @@ const Login = () => {
 
   return (
     <div>
-    <div className="container">
-      <div className="p-4 box">
+    <div className="container" style={{marginTop: "50px"}}>
+      <div className="p-4 box" style={{width: "40%"}}>
         <h2 className="mb-3">Login</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
@@ -71,7 +71,7 @@ const Login = () => {
           />
         </div>
       </div>
-      <div className="p-4 box mt-3 text-center">
+      <div className="p-4 box mt-3 text-center" style={{width: "40%"}}>
         Don't have an account? <Link to="/signup">Sign up</Link>
       </div>
     </div>
