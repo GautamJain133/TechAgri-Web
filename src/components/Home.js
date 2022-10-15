@@ -7,6 +7,7 @@ import { useUserAuth } from "../context/UserAuthContext";
 import Navbarhome from "./Navbar";
 import { Link } from "react-router-dom";
 import "../Styles/style.css";
+
 import {
   FaTwitter,
   FaFacebookSquare,
@@ -190,164 +191,80 @@ const Home = () => {
             </div>
 
             <div className="row">
-              <div
-                className="col-md-6 col-lg-3 d-flex align-items-stretch"
-                data-aos="zoom-in"
-                data-aos-delay="100"
-              >
-                <div className="icon-box">
-                  <div className="icon">
-                    <i className="bx bxl-dribbble"></i>
-                  </div>
-                  <h4 className="title">
-                    <a href="">Lorem Ipsum</a>
-                  </h4>
-                  <p className="description">
-                    Voluptatum deleniti atque corrupti quos dolores et quas
-                    molestias excepturi sint occaecati cupiditate
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="col-md-6 col-lg-3 d-flex align-items-stretch"
-                data-aos="zoom-in"
-                data-aos-delay="200"
-              >
-                <div className="icon-box">
-                  <div className="icon">
-                    <i className="bx bx-file"></i>
-                  </div>
-                  <h4 className="title">
-                    <a href="">Sed ut perspiciatis</a>
-                  </h4>
-                  <p className="description">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="col-md-6 col-lg-3 d-flex align-items-stretch"
-                data-aos="zoom-in"
-                data-aos-delay="300"
-              >
-                <div className="icon-box">
-                  <div className="icon">
-                    <i className="bx bx-tachometer"></i>
-                  </div>
-                  <h4 className="title">
-                    <a href="">Magni Dolores</a>
-                  </h4>
-                  <p className="description">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="col-md-6 col-lg-3 d-flex align-items-stretch"
-                data-aos="zoom-in"
-                data-aos-delay="400"
-              >
-                <div className="icon-box">
-                  <div className="icon">
-                    <i className="bx bx-world"></i>
-                  </div>
-                  <h4 className="title">
-                    <a href="">Nemo Enim</a>
-                  </h4>
-                  <p className="description">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum
-                  </p>
-                </div>
+            <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div className="icon-box">
+                <div className="icon"><i className="bx bxl-dribbble"></i></div>
+                <h4 className="title"><a href="">Provide Crop Harvest Data</a></h4>
+                <p className="description" style={{textAlign:"start", marginLeft:"0", marginTop: "35px"}}>Companies will be given the sowing and harvesting information for the required crop. Aslo the type of soil used</p>
               </div>
             </div>
-
-            <div className="row">
-              <p>For Farmers</p>
-            </div>
-
-            <div className="row">
-              <div
-                className="col-md-6 col-lg-3 d-flex align-items-stretch"
-                data-aos="zoom-in"
-                data-aos-delay="100"
-              >
-                <div className="icon-box">
-                  <div className="icon">
-                    <i className="bx bxl-dribbble"></i>
-                  </div>
-                  <h4 className="title">
-                    <a href="">Lorem Ipsum</a>
-                  </h4>
-                  <p className="description">
-                    Voluptatum deleniti atque corrupti quos dolores et quas
-                    molestias excepturi sint occaecati cupiditate
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="col-md-6 col-lg-3 d-flex align-items-stretch"
-                data-aos="zoom-in"
-                data-aos-delay="200"
-              >
-                <div className="icon-box">
-                  <div className="icon">
-                    <i className="bx bx-file"></i>
-                  </div>
-                  <h4 className="title">
-                    <a href="">Sed ut perspiciatis</a>
-                  </h4>
-                  <p className="description">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="col-md-6 col-lg-3 d-flex align-items-stretch"
-                data-aos="zoom-in"
-                data-aos-delay="300"
-              >
-                <div className="icon-box">
-                  <div className="icon">
-                    <i className="bx bx-tachometer"></i>
-                  </div>
-                  <h4 className="title">
-                    <a href="">Magni Dolores</a>
-                  </h4>
-                  <p className="description">
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="col-md-6 col-lg-3 d-flex align-items-stretch"
-                data-aos="zoom-in"
-                data-aos-delay="400"
-              >
-                <div className="icon-box">
-                  <div className="icon">
-                    <i className="bx bx-world"></i>
-                  </div>
-                  <h4 className="title">
-                    <a href="">Nemo Enim</a>
-                  </h4>
-                  <p className="description">
-                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                    qui blanditiis praesentium voluptatum
-                  </p>
-                </div>
+  
+            <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+              <div className="icon-box">
+                <div className="icon"><i className="bx bx-file"></i></div>
+                <h4 className="title"><a href="">Quality Standards</a></h4>
+                <p className="description" style={{textAlign:"start", marginLeft:"0", marginTop: "35px"}}>Company can filter the options and eliminate some chemicals used by using our sorting options to miantain quality needs of the product.</p>
               </div>
             </div>
+  
+            <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+              <div className="icon-box">
+                <div className="icon"><i className="bx bx-tachometer"></i></div>
+                <h4 className="title"><a href="">Production Scheduling</a></h4>
+                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom: "80px"}}>This will help the organization to maximise the profit by reducing cost.</p>
+              </div>
+            </div>
+  
+            <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+              <div className="icon-box">
+                <div className="icon"><i className="bx bx-world"></i></div>
+                <h4 className="title"><a href="">Acquiring Harvest</a></h4>
+                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom:"23px"}}>The warehouses (from which crop will be taken) can be sorted on the distance from the company manufacturing unit and the crop warehouse.</p>
+              </div>
+            </div>
+  
+          </div>
+
+          <div className="row">
+            <p>
+                For Farmers
+            </p>
+          </div>
+
+          <div className="row">
+            <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div className="icon-box">
+                <div className="icon"><i className="bx bxl-dribbble"></i></div>
+                <h4 className="title"><a href="">Weather Forecast</a></h4>
+                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom: "43px"}}>Farmers can use use the weather forecasting functionality to change the farming techniques accordingly.</p>
+              </div>
+            </div>
+  
+            <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+              <div className="icon-box">
+                  <div className="icon"><i className="bx bx-file"></i></div>
+                <h4 className="title"><a href="">Pest Control</a></h4>
+                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom: "100px"}}>The farmer can simply mention the the pest that has diseased the crop.</p>
+              </div>
+            </div>
+  
+            <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+              <div className="icon-box">
+                <div className="icon"><i className="bx bx-tachometer"></i></div>
+                <h4 className="title"><a href="">Best Farming Practices</a></h4>
+                <p className="description" style={{textAlign:"start", marginLeft:"0"}}>The farmer can get to know about the best farming techniques based on the location of farming, the standard of seeds and groundwater availability.</p>
+              </div>
+            </div>
+  
+            <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+              <div className="icon-box">
+                <div className="icon"><i className="bx bx-world"></i></div>
+                <h4 className="title"><a href="">Crop Suggestion</a></h4>
+                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom: "83px"}}>Farmer will be provided with Crop suggestion on the basis of inputs given of the soil contents</p>
+              </div>
+            </div>
+  
+          </div>
           </div>
         </section>
         {/* End Services Section */}
@@ -369,18 +286,18 @@ const Home = () => {
       </div>    */}
 
             <div className="p-5 d-flex flex-row gap-4 justify-content-center align-items-center">
-              <Link to="/company"><Button
+              <Link to="/company" style={{marginRight:"1px"}}><Button
                 size="lg"
                 style={{ backgroundColor: "#B5DEFC", color: "#001C44" }}
               >
                 For Companies
               </Button></Link>
-              <a href="http://127.0.0.1:5500/html_files/farmer.html"><Button
+              <Link to="/farmer" style={{marginLeft:"1px"}}><Button
                 size="lg"
-                style={{ backgroundColor: "#B5DEFC", color: "#001C44" }}
+                style={{ backgroundColor: "#B5DEFC", color: "#001C44"}}
               >
                 For Farmers
-              </Button></a>
+              </Button></Link>
             </div>
           </div>
         </section>
@@ -402,14 +319,14 @@ const Home = () => {
               >
                 <div className="member">
                   <img
-                    src={require("../assets/img/ashu.jpg")}
+                    src={require("../assets/img/gautamc.jpeg")}
                     className="img-fluid"
                     alt=""
                   />
                   <div className="member-info">
                     <div className="member-info-content">
-                      <h4>Walter White</h4>
-                      <span>Chief Executive Officer</span>
+                      <h4>Gautam Kumar Jain</h4>
+                      <span>Core Team Lead</span>
                     </div>
                     <div className="social">
                       <a href="">
@@ -442,8 +359,8 @@ const Home = () => {
                   />
                   <div className="member-info">
                     <div className="member-info-content">
-                      <h4>Sarah Jhonson</h4>
-                      <span>Product Manager</span>
+                      <h4>Ashwin Gupta</h4>
+                      <span>Team Manager</span>
                     </div>
                     <div className="social">
                       <a href="">
@@ -476,8 +393,8 @@ const Home = () => {
                   />
                   <div className="member-info">
                     <div className="member-info-content">
-                      <h4>William Anderson</h4>
-                      <span>CTO</span>
+                      <h4>Ashu Agarwal</h4>
+                      <span>Frontend Developer</span>
                     </div>
                     <div className="social">
                       <a href="">
@@ -504,14 +421,14 @@ const Home = () => {
               >
                 <div className="member">
                   <img
-                    src={require("../assets/img/ashu.jpg")}
+                    src={require("../assets/img/dharmi.jpeg")}
                     className="img-fluid"
                     alt=""
                   />
                   <div className="member-info">
                     <div className="member-info-content">
-                      <h4>Amanda Jepson</h4>
-                      <span>Accountant</span>
+                      <h4>Dharmi Kapadiya</h4>
+                      <span>React developer</span>
                     </div>
                     <div className="social">
                       <a href="">

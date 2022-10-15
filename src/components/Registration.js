@@ -30,6 +30,11 @@ const Reg = () => {
       },
       header
     );
+    if(type===1){
+      navigate("/farmer");
+    }
+    else
+      navigate("/company");
   };
 
   const createToken = async () => {
@@ -59,8 +64,8 @@ const Reg = () => {
                 onChange={(e) => setType(e.target.value)}
                 id="select_role"
               >
-                <option value="1">Production Company</option>
-                <option value="2">Farmer</option>
+                <option value="1">Farmer</option>
+                <option value="2">Production company</option>
               </select>
             </div>
           </div>
