@@ -46,7 +46,7 @@ function Farmer() {
                 <div className="card">
                     <div className="card-body text-center" style={{padding:"20px", paddingBottom:"40px"}}>
                         <div className="card-img pt-2 pb-3"> <img src={("../assets/img/image1.png")} alt=""/> </div>
-                        <div className="name h5"><a href="#">Crop Suggestion</a></div>
+                        <div className="name h5"><a href="http://127.0.0.1:5500/html_files/crop-suggestion.html">Crop Suggestion</a></div>
                         <div className="testimonial"> Get crop suggestion based on the soil content of your land </div>
                     </div>
                 </div>
