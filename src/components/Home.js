@@ -6,6 +6,8 @@ import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
 import Navbarhome from "./Navbar";
 import "../Styles/style.css";
+import { FaTwitter, FaFacebookSquare, FaInstagram, FaLinkedinIn} from "react-icons/fa";
+
 //import app from "../firebase";
 //import { auth } from "../firebase";
 
@@ -439,11 +441,10 @@ const Home = () => {
             <h4>Our Social Networks</h4>
             <p className="ms-0">Connect with us for regular updates</p>
             <div className="social-links mt-3">
-              <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
-              <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
-              <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-              <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
-              <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+              <a href="#" className="twitter"><FaTwitter/></a>
+              <a href="#" className="facebook"><FaInstagram/></a>
+              <a href="#" className="instagram"><FaFacebookSquare/></a>
+              <a href="#" className="linkedin"><FaLinkedinIn/></a>
             </div>
           </div>
 
@@ -460,7 +461,7 @@ const Home = () => {
         {/* You can delete the links only if you purchased the pro version. */}
         {/* Licensing information: https://bootstrapmade.com/license/ */}
         {/* Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ */}
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        copyright codered 2022
       </div>
     </div>
   </footer>{/* End Footer */}
