@@ -25,7 +25,7 @@ function Company(){
                     <h4>Peak Harvesting Time for the crop</h4>
                 </div>
             </div>
-            <div className="d-flex flex-row gap-4 align-items-center justify-content-center mb-5">
+            <div className="d-flex flex-row gap-4 align-items-start justify-content-start mb-5">
 
                 <select name="cars" id="cars" className="p-2" style={{width: "150px"}}>
                     <option value="0">starting month</option>
@@ -57,6 +57,17 @@ function Company(){
                     <option value="4">Oct</option>
                     <option value="4">Nov</option>
                     <option value="4">Dec</option>
+                </select>
+
+                <input type="number" placeholder=" Quantity"></input>
+
+                <select className="p-1" style={{width: "150px"}}>
+                    <option value="0">Pesticides</option>
+                    <option value="0">glyphosate</option>
+                    <option value="0">Acephate</option>
+                    <option value="0">Propoxur</option>
+                    <option value="0">Metaldehyde</option>
+                    <option value="0">DDT</option>
                 </select>
 
                 
