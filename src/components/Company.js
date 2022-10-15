@@ -59,6 +59,17 @@ function Company(){
                     <option value="4">Dec</option>
                 </select>
 
+                <input type="number" placeholder=" Quantity"></input>
+
+                <select className="p-1" style={{width: "150px"}}>
+                    <option value="0">Pesticides</option>
+                    <option value="0">glyphosate</option>
+                    <option value="0">Acephate</option>
+                    <option value="0">Propoxur</option>
+                    <option value="0">Metaldehyde</option>
+                    <option value="0">DDT</option>
+                </select>
+
                 
             </div>
 
