@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import Navbarhome from './Navbar';
+import "../assets/css/style.css"
 import { FaTwitter, FaFacebookSquare, FaInstagram, FaLinkedinIn} from "react-icons/fa";
 
 function Farmer() {
@@ -22,8 +23,8 @@ function Farmer() {
         
             <div className="col-lg-6 d-flex justify-content-center">
                 <div className="card">
-                    <div className="card-body text-center ms-0">
-                        <div className="card-img pt-2 pb-3"> <img src={("../assets/img/image1.png")} alt=""/> </div>
+                    <div className="card-body text-center ms-0" style={{paddingTop:"30px", paddingBottom:"35px", paddingLeft:"80px", paddingRight:"80px"}}>
+                        <div className="card-img pt-2 pb-3"><img src={("../assets/img/image1.png")} alt=""/> </div>
                         <div className="name h5">Get weather alerts</div>
                         <div className="testimonial"> Get latest weather alerts for your location.</div>
                     </div>
@@ -43,7 +44,7 @@ function Farmer() {
         
             <div className="col-lg-6 d-flex justify-content-center">
                 <div className="card">
-                    <div className="card-body text-center">
+                    <div className="card-body text-center" style={{padding:"20px", paddingBottom:"40px"}}>
                         <div className="card-img pt-2 pb-3"> <img src={("../assets/img/image1.png")} alt=""/> </div>
                         <div className="name h5">Crop Suggestion</div>
                         <div className="testimonial"> Get crop suggestion based on the soil content of your land </div>

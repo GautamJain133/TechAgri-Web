@@ -46,7 +46,7 @@ const Reg = () => {
 
   return (
     <>
-      <div className="reg_container">
+      <div className="container reg_container" style={{width:"500px",marginLeft:"400px"}}>
         <div className="role">
           <h5>Select your role</h5>
           <div className="input-field select_role">
