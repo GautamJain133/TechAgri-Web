@@ -1,10 +1,53 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbarhome from './Navbar';
 import "../Styles/company.css"
 import { Card, Button } from 'react-bootstrap';
+import {useNavigate} from "react-router-dom";
 import { FaTwitter, FaFacebookSquare, FaInstagram, FaLinkedinIn} from "react-icons/fa";
+import axios from 'axios';
+import { useUserAuth } from "../context/UserAuthContext";
 
 function Company(){
+    
+    const { user } = useUserAuth();
+
+    const navigate = useNavigate();
+  
+    const createToken = async () => {
+      const token = user && (await user.getIdToken());
+  
+      const payloadHeader = {
+        headers: {
+          "Content-Type": "application/json",
+          "x-auth-token": `${token}`,
+        },
+      };
+      return payloadHeader;
+    };
+    //   event.preventDefault();
+      console.log("test");
+
+    let[Cropname, setCropname] = useState("");
+
+
+    
+   // console.log("header is sfjsdkfj " + header.headers["x-auth-token"]);
+    console.log("test");
+
+
+
+
+const peektime = async() => {
+    Cropname = window.prompt("Enter crop name");
+    setCropname(Cropname);
+    const header = await createToken();
+    let res = await axios.post("/highest-production",{
+        "cropname": Cropname
+    },header);
+      setCropname(res);
+    alert(res);
+
+}
 
     return(
         <>
@@ -21,7 +64,7 @@ function Company(){
                         SEARCH <div/>
                 </div>
 
-                <div className="harvest" style={{width: "50%",backgroundColor:"#FF884B",color:"white",padding:"3px",paddingTop: "5px",textAlign:"center",marginLeft:"150px", borderRadius:"10px"}}>
+                <div className="harvest" onClick={peektime} style={{width: "50%",backgroundColor:"#FF884B",color:"white",padding:"3px",paddingTop: "5px",textAlign:"center",marginLeft:"150px", borderRadius:"10px"}}>
                     <h4>Peak Harvesting Time for the crop</h4>
                 </div>
             </div>

@@ -369,18 +369,18 @@ const Home = () => {
       </div>    */}
 
             <div className="p-5 d-flex flex-row gap-4 justify-content-center align-items-center">
-              <Button
+              <Link to="/company"><Button
                 size="lg"
                 style={{ backgroundColor: "#B5DEFC", color: "#001C44" }}
               >
                 For Companies
-              </Button>{" "}
-              <Button
+              </Button></Link>
+              <a href="http://127.0.0.1:5500/html_files/farmer.html"><Button
                 size="lg"
                 style={{ backgroundColor: "#B5DEFC", color: "#001C44" }}
               >
                 For Farmers
-              </Button>
+              </Button></a>
             </div>
           </div>
         </section>
