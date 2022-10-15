@@ -1,14 +1,16 @@
 import React from 'react';
 import Navbarhome from './Navbar';
 import "../Styles/company.css"
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
+import { FaTwitter, FaFacebookSquare, FaInstagram, FaLinkedinIn} from "react-icons/fa";
 
 function Company(){
 
     return(
         <>
         <Navbarhome/>
-            <div div className="d-flex flex-row align-items-center justify-content-center">
+        <div className='d-flex flex-column mb-5'>
+            <div className="d-flex flex-column align-items-center justify-content-center">
                 <div className="d-flex justify-content-center align-items-center w-100 h-100 ps-lg-0 ps-sm-3 sec-bar p-4 ps-3 mb-4">
                         <input
                         className=" ps-md-3 ps-3 ms-5"
@@ -18,25 +20,159 @@ function Company(){
                         <div className="btn btn-primary d-flex ms-3 align-items-center justify-content-center" style={{backgroundColor: "#B6E388", color:"black"}}>
                         SEARCH <div/>
                 </div>
+
+                <div className="harvest" style={{width: "50%",backgroundColor:"#FF884B",color:"white",padding:"3px",paddingTop: "5px",textAlign:"center",marginLeft:"150px", borderRadius:"10px"}}>
+                    <h4>Peak Harvesting Time for the crop</h4>
+                </div>
+            </div>
+            <div className="d-flex flex-row gap-4 align-items-center justify-content-center mb-5">
+
+                <select name="cars" id="cars" className="p-2" style={{width: "150px"}}>
+                    <option value="0">starting month</option>
+                    <option value="1">Jan</option>
+                    <option value="2">Fab</option>
+                    <option value="3">Mar</option>
+                    <option value="4">Apr</option>
+                    <option value="4">May</option>
+                    <option value="4">June</option>
+                    <option value="4">July</option>
+                    <option value="4">Aug</option>
+                    <option value="4">Sep</option>
+                    <option value="4">Oct</option>
+                    <option value="4">Nov</option>
+                    <option value="4">Dec</option>
+                </select>
+
+                <select name="cars" id="cars" className="p-2" style={{width: "150px"}}>
+                    <option value="0">ending month</option>
+                    <option value="1">Jan</option>
+                    <option value="2">Fab</option>
+                    <option value="3">Mar</option>
+                    <option value="4">Apr</option>
+                    <option value="4">May</option>
+                    <option value="4">June</option>
+                    <option value="4">July</option>
+                    <option value="4">Aug</option>
+                    <option value="4">Sep</option>
+                    <option value="4">Oct</option>
+                    <option value="4">Nov</option>
+                    <option value="4">Dec</option>
+                </select>
+
+                
             </div>
 
             <div className='d-flex flex-row gap-2 flex-wrap justify-content-start align-items-start ms-5 me-5 mb-5'>
-            <Card style={{ width: '15rem' }}>
-                
-            <Card.Body>
-                <Card.Title>Farmer1</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-                <Card.Text className="ms-0">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Card.Link href="#">Card Link</Card.Link>
-                <Card.Link href="#">Another Link</Card.Link>
-            </Card.Body>
-            </Card>
+                <Card style={{ width: '15rem' }}> 
+                    <Card.Body>
+                        <Card.Title style={{textAlign:"left"}}>Farmer1</Card.Title>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Cropname</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Available quantity</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Warehouse address</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Pincode</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-4" style={{textAlign:"left"}}>location</Card.Text>
+                        <Button style={{backgroundColor: "#B6E388", color:"black"}}>Contact</Button>
+                    </Card.Body>
+                </Card>
 
+                <Card style={{ width: '15rem' }}> 
+                    <Card.Body>
+                        <Card.Title style={{textAlign:"left"}}>Farmer1</Card.Title>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Cropname</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Available quantity</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Warehouse address</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Pincode</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-4" style={{textAlign:"left"}}>location</Card.Text>
+                        <Button style={{backgroundColor: "#B6E388", color:"black"}}>Contact</Button>
+                    </Card.Body>
+                </Card>
+
+                <Card style={{ width: '15rem' }}> 
+                    <Card.Body>
+                        <Card.Title style={{textAlign:"left"}}>Farmer1</Card.Title>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Cropname</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Available quantity</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Warehouse address</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Pincode</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-4" style={{textAlign:"left"}}>location</Card.Text>
+                        <Button style={{backgroundColor: "#B6E388", color:"black"}}>Contact</Button>
+                    </Card.Body>
+                </Card>
+
+                <Card style={{ width: '15rem' }}> 
+                    <Card.Body>
+                        <Card.Title style={{textAlign:"left"}}>Farmer1</Card.Title>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Cropname</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Available quantity</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Warehouse address</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-0" style={{textAlign:"left"}}>Pincode</Card.Text>
+                        <Card.Text className="ms-0 text-muted mb-4" style={{textAlign:"left"}}>location</Card.Text>
+                        <Button style={{backgroundColor: "#B6E388", color:"black"}}>Contact</Button>
+                    </Card.Body>
+                </Card>
+                    
+                
+            </div>
         </div>
         </div>
+
+           {/* ======= Footer ======= */}
+            <footer id="footer">
+
+            <div className="footer-top">
+            <div className="container">
+                <div className="row">
+
+                <div className="col-lg-3 col-md-6 footer-contact">
+                    <h3>Samadhaan</h3>
+                    <p>
+                    Skit College, Ramnagriya <br/>
+                    Jaipur, Rajasthan<br/>
+                    India <br/><br/>
+                    <strong>Phone:</strong> +91 123 456 7890<br/>
+                    <strong>Email:</strong> info@example.com<br/>
+                    </p>
+                </div>
+
+                <div className="col-lg-6 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                    <li><a href="#" style={{marginLeft: "0",marginBottom: "10px"}}>Home</a></li>
+                    <li><a href="#" style={{marginLeft: "0",marginBottom: "10px"}}>About us</a></li>
+                    <li><a href="#" style={{marginLeft: "0",marginBottom: "10px"}}>Services</a></li>
+                    <li><a href="#" style={{marginLeft: "0",marginBottom: "10px"}}>Terms of service</a></li>
+                    <li><a href="#" style={{marginLeft: "0",marginBottom: "10px"}}>Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div className="col-lg-6 col-md-6 footer-links" style={{marginLeft: "120px"}}>
+                    <h4>Our Social Networks</h4>
+                    <p className="ms-0">Connect with us for regular updates</p>
+                    <div className="social-links mt-3">
+                    <a href="#" className="twitter"><FaTwitter/></a>
+                    <a href="#" className="facebook"><FaInstagram/></a>
+                    <a href="#" className="instagram"><FaFacebookSquare/></a>
+                    <a href="#" className="linkedin"><FaLinkedinIn/></a>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            </div>
+
+            <div className="container py-4">
+            <div className="copyright">
+                &copy; Copyright <strong><span>Samadhaan</span></strong>. All Rights Reserved
+            </div>
+            <div className="credits">
+                {/* All the links in the footer should remain intact. */}
+                {/* You can delete the links only if you purchased the pro version. */}
+                {/* Licensing information: https://bootstrapmade.com/license/ */}
+                {/* Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ */}
+                copyright 2022
+            </div>
+            </div>
+            </footer>{/* End Footer */}
         </>
     )
 }

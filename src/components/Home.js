@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
 import Navbarhome from "./Navbar";
+import {Link} from "react-router-dom";
 import "../Styles/style.css";
 import { FaTwitter, FaFacebookSquare, FaInstagram, FaLinkedinIn} from "react-icons/fa";
 
@@ -236,12 +237,12 @@ const Home = () => {
             </div>    */}
 
         <div className="p-5 d-flex flex-row gap-4 justify-content-center align-items-center">
-        <Button size="lg" style={{backgroundColor:"#B5DEFC", color: "#001C44"}}>
+        <Link to="/company"><Button size="lg" style={{backgroundColor:"#B5DEFC", color: "#001C44"}}>
           For Companies
-        </Button>{' '}
-        <Button size="lg" style={{backgroundColor:"#B5DEFC", color: "#001C44"}}>
+        </Button></Link>
+        <Link to="/farmer"><Button size="lg" style={{backgroundColor:"#B5DEFC", color: "#001C44"}}>
           For Farmers
-        </Button>
+        </Button></Link>
       </div>
         </div>
       </section>
