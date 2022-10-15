@@ -6,6 +6,7 @@ import Navbarhome from './Navbar';
 function Farmer() {
   return (
     <>
+      <Navbarhome/>
       
     </>
   );
