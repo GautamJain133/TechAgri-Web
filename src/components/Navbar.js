@@ -61,8 +61,8 @@ function Navbarhome() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="navbar-text" className="collapse navbar-collapse">
           <Nav className="ms-2 me-0">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">about</Nav.Link>
+            <Nav.Link href="#home"><Link to="/">Home</Link></Nav.Link>
+            <Nav.Link href="#team">about</Nav.Link>
             {user?
             (
               <NavDropdown
