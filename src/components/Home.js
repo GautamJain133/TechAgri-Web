@@ -219,7 +219,7 @@ const Home = () => {
               <div className="icon-box">
                 <div className="icon"><i className="bx bx-world"></i></div>
                 <h4 className="title"><a href="">Acquiring Harvest</a></h4>
-                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom:"35px"}}>The warehouses (from which crop will be taken) can be sorted on the distance from the company manufacturing unit and the crop warehouse.</p>
+                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom:"23px"}}>The warehouses (from which crop will be taken) can be sorted on the distance from the company manufacturing unit and the crop warehouse.</p>
               </div>
             </div>
   
@@ -236,7 +236,7 @@ const Home = () => {
               <div className="icon-box">
                 <div className="icon"><i className="bx bxl-dribbble"></i></div>
                 <h4 className="title"><a href="">Weather Forecast</a></h4>
-                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom: "30px"}}>Farmers can use use the weather forecasting functionality to change the farming techniques accordingly.</p>
+                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom: "43px"}}>Farmers can use use the weather forecasting functionality to change the farming techniques accordingly.</p>
               </div>
             </div>
   
@@ -244,7 +244,7 @@ const Home = () => {
               <div className="icon-box">
                   <div className="icon"><i className="bx bx-file"></i></div>
                 <h4 className="title"><a href="">Pest Control</a></h4>
-                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom: "85px"}}>The farmer can simply mention the the pest that has diseased the crop.</p>
+                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom: "100px"}}>The farmer can simply mention the the pest that has diseased the crop.</p>
               </div>
             </div>
   
@@ -260,7 +260,7 @@ const Home = () => {
               <div className="icon-box">
                 <div className="icon"><i className="bx bx-world"></i></div>
                 <h4 className="title"><a href="">Crop Suggestion</a></h4>
-                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom: "70px"}}>Farmer will be provided with Crop suggestion on the basis of inputs given of the soil contents</p>
+                <p className="description" style={{textAlign:"start", marginLeft:"0", marginBottom: "83px"}}>Farmer will be provided with Crop suggestion on the basis of inputs given of the soil contents</p>
               </div>
             </div>
   
