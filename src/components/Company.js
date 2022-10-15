@@ -9,10 +9,6 @@ import { useUserAuth } from "../context/UserAuthContext";
 
 function Company(){
     
-   
-
-
-const peektime = async() => {
     const { user } = useUserAuth();
 
     const navigate = useNavigate();
@@ -31,24 +27,26 @@ const peektime = async() => {
     //   event.preventDefault();
       console.log("test");
 
-    const[Cropname, setCropname] = useState("");
+    let[Cropname, setCropname] = useState("");
 
-
-    const header = await createToken();
-    console.log("header is sfjsdkfj " + header.headers["x-auth-token"]);
-    console.log("test");
-
-    Cropname = window.prompt("Enter crop name");
-
-    setCropname(Cropname);
-
-    let res = axios.post("/highest-production",{
-        "cropname": Cropname
-    },header);
-
-    alert(res);
 
     
+   // console.log("header is sfjsdkfj " + header.headers["x-auth-token"]);
+    console.log("test");
+
+
+
+
+const peektime = async() => {
+    Cropname = window.prompt("Enter crop name");
+    setCropname(Cropname);
+    const header = await createToken();
+    let res = await axios.post("/highest-production",{
+        "cropname": Cropname
+    },header);
+      setCropname(res);
+    alert(res);
+
 }
 
     return(
