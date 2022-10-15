@@ -114,7 +114,7 @@ function Farmer() {
       </div>
       </footer>{/* End Footer */}
     </>
-  );
+  )
 }
 
 export default Farmer;
