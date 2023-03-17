@@ -13,7 +13,6 @@ const db =
 console.log(PORT);
 const app = express();
 
-// middlewares dnlkfsdnfds
 app.use(express.json());
 app.use(cors());
 
