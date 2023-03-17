@@ -10,6 +10,7 @@ import Reg from "./components/Registration";
 import Company from "./components/Company";
 import Farmer from "./components/Farmer";
 import Cropform from "./components/Cropform";
+import Gautam from "./components/Gautam";
 // import { useUserAuth } from "./context/UserAuthContext";
 // import axios from "axios";
 
@@ -47,7 +48,8 @@ function App() {
         <Route path="/registration" element={<Reg />} />
         <Route path="/company" element={<Company />} />
         <Route path="/farmer" element={<Farmer />} />
-        <Route path="/cropform" element={<Cropform/>}/>
+        <Route path="/cropform" element={<Cropform />} />
+        <Route path="/gautam" element={<Gautam />} />
       </Routes>
     </UserAuthContextProvider>
   );
