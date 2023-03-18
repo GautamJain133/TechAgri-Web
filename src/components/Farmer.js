@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import Navbarhome from './Navbar';
 import "../assets/css/style.css"
+import { Link } from 'react-router-dom';
 import { FaTwitter, FaFacebookSquare, FaInstagram, FaLinkedinIn} from "react-icons/fa";
 
 function Farmer() {
@@ -51,8 +52,27 @@ function Farmer() {
                     </div>
                 </div>
             </div>
-        </div>
-            
+
+            <div className="col-lg-6 mt-5 d-flex justify-content-center">
+                <div className="card">
+                    <div className="card-body text-center" style={{padding:"20px", paddingBottom:"40px"}}>
+                        <div className="card-img pt-2 pb-3"> <img src={("../assets/img/image1.png")} alt=""/> </div>
+                        <div className="name h5"><Link to="/gautam">Fertilizer Recommendation</Link></div>
+                        <div className="testimonial"> Get fertilizer Recommendation based on the soil content of your land </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="col-lg-6 mt-5 d-flex justify-content-center">
+                <div className="card">
+                    <div className="card-body text-center" style={{padding:"20px", paddingBottom:"40px"}}>
+                        <div className="card-img pt-2 pb-3"> <img src={("../assets/img/image1.png")} alt=""/> </div>
+                        <div className="name h5"><a href="#">Food Budgeting</a></div>
+                        <div className="testimonial"> Calculate how much you need to spend on groceries each week based on your family size and dietary needs.</div>
+                    </div>
+                </div>
+            </div>
+        </div>    
             
     </div>
 
