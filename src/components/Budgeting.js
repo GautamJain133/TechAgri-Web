@@ -1,5 +1,7 @@
 import React from 'react';
 import "../assets/css/budgeting.css";
+import Navbarhome from './Navbar.js';
+
 function budgeting(){
 
     function calculate() {
@@ -45,9 +47,10 @@ function budgeting(){
 
     return(
         <>
+        <Navbarhome/>
         <h2 className='mt-5 text-center' style={{color:"#0b5824"}}>Food Budgeting Calculator</h2>
         <div className="main">
-             <form>
+             <form class="budget">
                 <label htmlFor="familySize" className='me-3'>Family Size:</label>
                 <input class="w-50" type="number" id="familySize" name="familySize" min={1} max={10} /><br /><br />
         

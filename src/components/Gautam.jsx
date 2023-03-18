@@ -3,6 +3,7 @@ import "../assets/css/gautam.css";
 import Popup from "./Popup";
 import axios from "axios";
 import Spinner from "./Spinner.jsx";
+import Navbarhome from './Navbar.js';
 
 const Gautam = () => {
   const cropOptions = [
@@ -144,7 +145,8 @@ const Gautam = () => {
     </div>
   ) : (
     <>
-      <div className="form-container">
+    <Navbarhome/>
+      <div className="form-container mt-3">
         <h2>Fertilizer Recommendations </h2>
 
         {showPopup && (
@@ -254,7 +256,7 @@ const Gautam = () => {
               ))}
             </select>
           </div>
-          <button type="submit" className="submit-btn">
+          <button type="submit" className="submit-btn w-25">
             Submit
           </button>
         </form>
