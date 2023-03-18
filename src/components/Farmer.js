@@ -57,7 +57,7 @@ function Farmer() {
                 <div className="card">
                     <div className="card-body text-center" style={{padding:"20px", paddingBottom:"40px"}}>
                         <div className="card-img pt-2 pb-3"> <img src={("../assets/img/image1.png")} alt=""/> </div>
-                        <div className="name h5"><Link to="/gautam">Fertilizer Recommendation</Link></div>
+                        <div className="name h5"><Link to="/fertilizer">Fertilizer Recommendation</Link></div>
                         <div className="testimonial"> Get fertilizer Recommendation based on the soil content of your land </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ function Farmer() {
                 <div className="card">
                     <div className="card-body text-center" style={{padding:"20px", paddingBottom:"40px"}}>
                         <div className="card-img pt-2 pb-3"> <img src={("../assets/img/image1.png")} alt=""/> </div>
-                        <div className="name h5"><a href="#">Food Budgeting</a></div>
+                        <div className="name h5"><Link to="/budgeting">Food Budgeting</Link></div>
                         <div className="testimonial"> Calculate how much you need to spend on groceries each week based on your family size and dietary needs.</div>
                     </div>
                 </div>
