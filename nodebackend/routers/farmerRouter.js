@@ -4,6 +4,7 @@ const farmerRouter = express.Router();
 const Cropinfo = require("../models/cropinfomodel");
 const Crops = require("../models/cropmodel");
 const Farmer = require("../models/farmermodel");
+const recommendFertilizer = require("../impdata/crops");
 
 farmerRouter.post("/crop-info", auth, async (req, res) => {
   try {
@@ -57,6 +58,25 @@ farmerRouter.get("/allfarmers", async (req, res) => {
     res.json(Result);
   } catch (e) {
     res.status(500).json({ error: e.message });
+  }
+});
+
+farmerRouter.post("/getrecommendations", async (req, res) => {
+  try {
+    console.log("recommendations");
+    console.log(req.body);
+
+    const ans = recommendFertilizer(
+      req.body.cropType,
+      req.body.soilType,
+      req.body.nitrogen,
+      req.body.phosphorus,
+      req.body.potassium
+    );
+
+    res.json(ans);
+  } catch (e) {
+    console.log(e.message);
   }
 });
 

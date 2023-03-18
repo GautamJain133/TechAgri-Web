@@ -3,13 +3,12 @@ function recommendFertilizer(
   soilType,
   nitrogen,
   phosphorus,
-  potassium,
-  otherNutrients
+  potassium
 ) {
   let recommended_fertilizer = {};
 
-  if (cropType == "corn") {
-    if (soilType == "sandy loam") {
+  if (cropType === "corn") {
+    if (soilType === "sandy loam") {
       if (nitrogen < 160 && phosphorus < 60 && potassium < 200) {
         recommended_fertilizer = {
           name: "NPK 20-10-10",
@@ -332,3 +331,4 @@ function recommendFertilizer(
 
   return recommended_fertilizer;
 }
+module.exports = recommendFertilizer;
