@@ -65,7 +65,7 @@ const Login = () => {
     try {
       await googleSignIn();
       await typecheck();
-      navigate("http://localhost:3000/");
+      navigate("/");
     } catch (error) {
       console.log(error.message);
     }
