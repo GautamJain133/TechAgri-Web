@@ -220,7 +220,7 @@ function recommendFertilizer(
           price: "$50.00/ton",
         };
       }
-    } else if (soilType == "silty loam") {
+    } else if (soilType === "silty loam") {
       if (nitrogen < 80 && phosphorus < 40 && potassium < 80) {
         recommended_fertilizer = {
           name: "NPK 16-20-0",
