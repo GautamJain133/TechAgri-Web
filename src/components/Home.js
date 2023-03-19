@@ -187,19 +187,19 @@ const Home = () => {
             </div>
 
           <div className="ser d-flex flex-row justify-content-center align-items-center">
-            <a href="#" className="pe-5 ps-2 border-end border-secondary">
+            <a href="http://127.0.0.1:5500/html_files/food_security.html" className="pe-5 ps-2 border-end border-secondary">
               <div className="ru d-flex flex-column justify-content-center">
                 <div className="ms-1 text-center" style={{color: "white",fontSize:"18px"}}>Food Security</div>
               </div>
             </a>
             
-            <a href="#" className="pe-5 ps-2 border-end border-secondary">
+            <a href="" className="pe-5 ps-2 border-end border-secondary">
               <div className="ru">
                 <div className="mt-2 text-center" style={{color: "white",fontSize:"18px"}}>Food Certification</div>
               </div>
             </a>
             
-            <a href="#" className="pe-5 ps-2 border-end border-secondary">
+            <a href="http://127.0.0.1:5500/html_files/volunteer_registration.html" className="pe-5 ps-2 border-end border-secondary">
               <div className="ru d-flex flex-column justify-content-center">
                 <div className="mm mt-3 text-center" style={{color: "white",fontSize:"18px"}}>Volunteering Opportunities</div>
               </div>
