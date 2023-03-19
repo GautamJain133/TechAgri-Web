@@ -128,7 +128,7 @@ function Company() {
             >
               <option value="0">ending month</option>
               <option value="1">Jan</option>
-              <option value="2">Fab</option>
+              <option value="2">Feb</option>
               <option value="3">Mar</option>
               <option value="4">Apr</option>
               <option value="4">May</option>
