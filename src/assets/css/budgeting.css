@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.budget{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: #B5DEFC;
+    padding: 50px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 18px;
+}
+.btnn{
+    background-color:#21ae50;
+    color:antiquewhite;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+.btnn:hover{
+    cursor: pointer;
+}

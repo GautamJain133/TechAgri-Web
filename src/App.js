@@ -11,7 +11,6 @@ import Company from "./components/Company";
 import Farmer from "./components/Farmer";
 import Cropform from "./components/Cropform";
 import Gautam from "./components/Gautam";
-import Directions from "./components/Directions";
 // import { useUserAuth } from "./context/UserAuthContext";
 // import axios from "axios";
 
@@ -51,9 +50,6 @@ function App() {
         <Route path="/farmer" element={<Farmer />} />
         <Route path="/cropform" element={<Cropform />} />
         <Route path="/gautam" element={<Gautam />} />
-
-        <Route path="/directions" element={<Directions />} />
-        <Route path="*" element={<Directions />} />
       </Routes>
     </UserAuthContextProvider>
   );
