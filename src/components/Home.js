@@ -199,11 +199,11 @@ const Home = () => {
               </div>
             </a>
             
-            <a href="http://127.0.0.1:5500/html_files/volunteer_registration.html" className="pe-5 ps-2 border-end border-secondary">
+            <Link to="/volunteering" className="pe-5 ps-2 border-end border-secondary">
               <div className="ru d-flex flex-column justify-content-center">
                 <div className="mm mt-3 text-center" style={{color: "white",fontSize:"18px"}}>Volunteering Opportunities</div>
               </div>
-            </a>
+            </Link>
            
            <a href="http://127.0.0.1:5500/html_files/donation.html">
              <div className="ru d-flex flex-column justify-content-center">
