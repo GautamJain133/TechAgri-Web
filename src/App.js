@@ -12,6 +12,8 @@ import Farmer from "./components/Farmer";
 import Cropform from "./components/Cropform";
 import Gautam from "./components/Gautam";
 import Budgeting from "./components/Budgeting";
+import Volunteering from "./components/VolunteeringPage";
+
 // import { useUserAuth } from "./context/UserAuthContext";
 // import axios from "axios";
 
@@ -52,6 +54,8 @@ function App() {
         <Route path="/cropform" element={<Cropform />} />
         <Route path="/fertilizer" element={<Gautam />} />
         <Route path="/budgeting" element={<Budgeting />}/>
+        <Route path="/Volunteering" element={< Volunteering/>}/>
+        <Route path="*" element={< Volunteering/>}/>
       </Routes>
     </UserAuthContextProvider>
   );
