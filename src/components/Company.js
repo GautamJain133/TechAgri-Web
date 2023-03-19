@@ -156,156 +156,156 @@ function Company() {
           <div className="d-flex flex-row gap-2 flex-wrap justify-content-start align-items-start ms-5 me-5 mb-5">
             <Card style={{ width: "15rem" }}>
               <Card.Body>
-                <Card.Title style={{ textAlign: "left" }}>Farmer1</Card.Title>
+                <Card.Title style={{ textAlign: "left" }}>Mohan Lal</Card.Title>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Cropname
+                  Rice
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Available quantity
+                  1000 kg
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Warehouse address
+                  31 street, Bikaner
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Pincode
+                  302039
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-4"
                   style={{ textAlign: "left" }}
                 >
-                  location
+                  Rajasthan
                 </Card.Text>
                 <Button style={{ backgroundColor: "#B6E388", color: "black" }}>
-                  Contact
+                  123-456-7890
                 </Button>
               </Card.Body>
             </Card>
 
             <Card style={{ width: "15rem" }}>
               <Card.Body>
-                <Card.Title style={{ textAlign: "left" }}>Farmer1</Card.Title>
+                <Card.Title style={{ textAlign: "left" }}>Ashwin Lal</Card.Title>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Cropname
+                  Rice
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Available quantity
+                  2500 Kg
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Warehouse address
+                  Old court road , Chaumahla
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Pincode
+                  303020
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-4"
                   style={{ textAlign: "left" }}
                 >
-                  location
+                  Jhalawar
                 </Card.Text>
                 <Button style={{ backgroundColor: "#B6E388", color: "black" }}>
-                  Contact
+                  987-654-3219
                 </Button>
               </Card.Body>
             </Card>
 
             <Card style={{ width: "15rem" }}>
               <Card.Body>
-                <Card.Title style={{ textAlign: "left" }}>Farmer1</Card.Title>
+                <Card.Title style={{ textAlign: "left" }}>Gautam Lal</Card.Title>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Cropname
+                  Wheat
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Available quantity
+                  1500 Kg
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Warehouse address
+                  23 street, Rawatbhaata
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Pincode
+                  304050
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-4"
                   style={{ textAlign: "left" }}
                 >
-                  location
+                  Rajasthan
                 </Card.Text>
                 <Button style={{ backgroundColor: "#B6E388", color: "black" }}>
-                  Contact
+                  555-666-7777
                 </Button>
               </Card.Body>
             </Card>
 
             <Card style={{ width: "15rem" }}>
               <Card.Body>
-                <Card.Title style={{ textAlign: "left" }}>Farmer1</Card.Title>
+                <Card.Title style={{ textAlign: "left" }}>Pawan Lal</Card.Title>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Cropname
+                  Corn
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Available quantity
+                  700 Kg
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Warehouse address
+                  31, Alwar
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-0"
                   style={{ textAlign: "left" }}
                 >
-                  Pincode
+                  302010
                 </Card.Text>
                 <Card.Text
                   className="ms-0 text-muted mb-4"
                   style={{ textAlign: "left" }}
                 >
-                  location
+                  Rajasthan
                 </Card.Text>
                 <Button style={{ backgroundColor: "#B6E388", color: "black" }}>
-                  Contact
+                  456-456-4567
                 </Button>
               </Card.Body>
             </Card>
