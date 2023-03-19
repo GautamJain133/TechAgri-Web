@@ -186,8 +186,35 @@ const Home = () => {
               <p>Check out the great services we offer</p>
             </div>
 
+          <div className="ser d-flex flex-row justify-content-center align-items-center">
+            <a href="#" className="pe-5 ps-2 border-end border-secondary">
+              <div className="ru d-flex flex-column justify-content-center">
+                <div className="ms-1 text-center" style={{color: "white",fontSize:"18px"}}>Food Security</div>
+              </div>
+            </a>
+            
+            <a href="#" className="pe-5 ps-2 border-end border-secondary">
+              <div className="ru">
+                <div className="mt-2 text-center" style={{color: "white",fontSize:"18px"}}>Food Certification</div>
+              </div>
+            </a>
+            
+            <a href="#" className="pe-5 ps-2 border-end border-secondary">
+              <div className="ru d-flex flex-column justify-content-center">
+                <div className="mm mt-3 text-center" style={{color: "white",fontSize:"18px"}}>Volunteering Opportunities</div>
+              </div>
+            </a>
+           
+           <a href="http://127.0.0.1:5500/html_files/donation.html">
+             <div className="ru d-flex flex-column justify-content-center">
+                <div className="mt-4 text-center ms-2" style={{color: "white",fontSize:"18px"}}>Donation</div>
+              </div>
+           </a>
+            
+          </div>
+
             <div className="row">
-              <p>For Companies</p>
+              <p className="fs-5 ms-0">For Companies</p>
             </div>
 
             <div className="row">
@@ -226,7 +253,7 @@ const Home = () => {
           </div>
 
           <div className="row">
-            <p>
+            <p className="fs-5 ms-0">
                 For Farmers
             </p>
           </div>
