@@ -146,6 +146,7 @@ const Gautam = () => {
   ) : (
     <>
     <Navbarhome/>
+    <div className="ab">
       <div className="form-container mt-3">
         <h2>Fertilizer Recommendations </h2>
 
@@ -261,7 +262,7 @@ const Gautam = () => {
           </button>
         </form>
       </div>{" "}
-      */
+      </div>
     </>
   );
 };
