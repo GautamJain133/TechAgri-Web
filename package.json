@@ -51,15 +51,7 @@
     ]
   },
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GautamJain133/TechAgri-Web.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/GautamJain133/TechAgri-Web/issues"
-  },
-  "homepage": "https://github.com/GautamJain133/TechAgri-Web#readme",
   "description": ""
 }
