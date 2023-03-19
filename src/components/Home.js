@@ -193,7 +193,7 @@ const Home = () => {
               </div>
             </a>
             
-            <a href="" className="pe-5 ps-2 border-end border-secondary">
+            <a href="http://127.0.0.1:5500/html_files/certification_food.html" className="pe-5 ps-2 border-end border-secondary">
               <div className="ru">
                 <div className="mt-2 text-center" style={{color: "white",fontSize:"18px"}}>Food Certification</div>
               </div>

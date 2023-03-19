@@ -1,3 +1,9 @@
+.a{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(210, 227, 215);
+  background-image: url("../assets/img/vole.png");
+}
 .form-container {
     max-width: 500px;
     margin: auto;
