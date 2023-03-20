@@ -120,11 +120,11 @@ const Map = () => {
           onChange={handleDestinationChange}
         >
           <option value="">--Nearby Foodbanks--</option>
-          <option value="75.82477,26.915512">Jaipur Foodbank</option>
-          <option value="75.816486,26.90042">State-Foodbank</option>
-          <option value="75.588328,24.934589">District Foodbank</option>
-          <option value="75.816298,26.88631">JITO Foodbank</option>
-          <option value="75.845437,26.830064">RBT Foodbank</option>
+          <option value="75.82477,26.915512">Jagatpura</option>
+          <option value="75.816486,26.90042">Malviya Nagar</option>
+          <option value="75.588328,24.934589">VidhyaDhar Nagar</option>
+          <option value="75.816298,26.88631">Mansarover</option>
+          <option value="75.845437,26.830064">Sanganer</option>
         </select>
       </div>
       <div id="map"></div>
