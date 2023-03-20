@@ -83,10 +83,13 @@ function Navbarhome() {
             ):(
             <Nav.Link><Link to="/login">Login</Link></Nav.Link>
             )}
-            <Nav.Link href="#home" style={{marginLeft:"500px",fontSize:"15px"}}><Link to="/directions">Food Bank Locator</Link></Nav.Link>
+            </Nav>
+          
+        </Navbar.Collapse>
+        <Nav className='ms-2 me-0 nav navbar-nav navbar-right ml-auto'>
+            <Nav.Link href="#home" className='navbar-nav pull-right'><Link to="/directions">Food Bank Locator</Link></Nav.Link>
             <Nav.Link href="http://127.0.0.1:5500/html_files/youtube_tut.html">Video Based Tutorials</Nav.Link>
           </Nav>
-        </Navbar.Collapse>
     </Navbar>
   );
 }

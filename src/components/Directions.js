@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "../Styles/directions.css";
+import Navbarhome from "./Navbar";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZ2F1dGFtamFpbiIsImEiOiJjbGZkdjlqMjcxMWdhM3Jtdm1kZDJlaHd4In0.Sp34ZhsaKMqc3xJ3BAexfg"; // replace with your Mapbox access token
@@ -129,6 +130,8 @@ const Map = () => {
   };
 
   return (
+    <>
+    <Navbarhome/>
     <div id="gautam">
       <div className="jain">
         <label>Foodbanks Locater</label>
@@ -147,6 +150,7 @@ const Map = () => {
       </div>
       <div id="map"></div>
     </div>
+    </>
   );
 };
 
