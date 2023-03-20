@@ -59,6 +59,17 @@ const Map = () => {
             map.removeSource("route");
           }
 
+          const marker = new mapboxgl.Marker({
+            color: "chocolate",
+          })
+            .setLngLat([75.85009, 26.822399])
+
+            .setPopup(new mapboxgl.Popup().setHTML("<p>Your Location</p>"))
+            .addTo(map);
+
+          marker.togglePopup();
+
+          //const maker = new mapboxgl.Marker().setLngLat(destination).addTo(map);
           //add route to map
           map.addLayer({
             id: "route",
