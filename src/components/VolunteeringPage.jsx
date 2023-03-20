@@ -1,9 +1,13 @@
 import React from 'react';
 import '../Styles/VolunteeringPage.css';
+import Navbarhome from './Navbar';
 
 function VolunteerPage() {
   return (
-    <div className="form-container">
+    <>
+    <Navbarhome/>
+    <div className='a'>
+    <div className="form-container mb-5">
       <h2>Volunteer Registration Form</h2>
       <form action="#" method="post">
         <label htmlFor="name">Name:</label>
@@ -27,6 +31,8 @@ function VolunteerPage() {
         <input type="submit" value="Submit" />
       </form>
     </div>
+    </div>
+    </>
   );
 }
 

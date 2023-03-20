@@ -7,7 +7,14 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
-  
+  .ab{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(210, 227, 215);
+    background-image: url("../img/fertilizer.png");
+    background-position: center; /* Center the image */
+    background-size: cover;
+  }
   /* Styles for the form header */
   .form-container h2 {
     margin-top: 0;
@@ -57,7 +64,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-    margin-left: 270px;
+    margin-left: 180px;
   }
   
   .submit-btn:hover {

@@ -38,10 +38,10 @@ function budgeting(){
         }
       
         // Calculate total cost per month
-        var totalCostPerMonth = costPerWeek * 4 * 82.54;
+        var n = costPerWeek * 4 * 82.54;
       
         // Display total cost
-        console.log(totalCostPerMonth)
+        let totalCostPerMonth = n.toFixed(2);
         document.getElementById("totalCost").setAttribute('value', "Rs. " + totalCostPerMonth);
       }
 

@@ -186,8 +186,35 @@ const Home = () => {
               <p>Check out the great services we offer</p>
             </div>
 
+          <div className="ser d-flex flex-row justify-content-center align-items-center">
+            <a href="http://127.0.0.1:5500/html_files/food_security.html" className="pe-5 ps-2 border-end border-secondary">
+              <div className="ru d-flex flex-column justify-content-center">
+                <div className="ms-1 text-center" style={{color: "white",fontSize:"18px"}}>Food Security</div>
+              </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/html_files/certification_food.html" className="pe-5 ps-2 border-end border-secondary">
+              <div className="ru">
+                <div className="mt-2 text-center" style={{color: "white",fontSize:"18px"}}>Food Certification</div>
+              </div>
+            </a>
+            
+            <Link to="/volunteering" className="pe-5 ps-2 border-end border-secondary">
+              <div className="ru d-flex flex-column justify-content-center">
+                <div className="mm mt-3 text-center" style={{color: "white",fontSize:"18px"}}>Volunteering Opportunities</div>
+              </div>
+            </Link>
+           
+           <a href="http://127.0.0.1:5500/html_files/donation.html">
+             <div className="ru d-flex flex-column justify-content-center">
+                <div className="mt-4 text-center ms-2" style={{color: "white",fontSize:"18px"}}>Donation</div>
+              </div>
+           </a>
+            
+          </div>
+
             <div className="row">
-              <p>For Companies</p>
+              <p className="fs-5 ms-0">For Companies</p>
             </div>
 
             <div className="row">
@@ -226,7 +253,7 @@ const Home = () => {
           </div>
 
           <div className="row">
-            <p>
+            <p className="fs-5 ms-0">
                 For Farmers
             </p>
           </div>
@@ -270,7 +297,7 @@ const Home = () => {
         {/* End Services Section */}
 
         {/* Buttons respective */}
-        <section id="portfolio" className="portfolio">
+        <section id="portfolio" className="portfolio" style={{backgroundColor:"#F0F8FF"}}>
           <div className="container" data-aos="fade-up">
             {/* <div className="row gy-4 p-5">
           <div className="col-lg-6 btn-get-started scrollto">
@@ -288,13 +315,13 @@ const Home = () => {
             <div className="p-5 d-flex flex-row gap-4 justify-content-center align-items-center">
               <Link to="/company" style={{marginRight:"1px"}}><Button
                 size="lg"
-                style={{ backgroundColor: "#B5DEFC", color: "#001C44" }}
+                style={{ backgroundColor: "#B5DEFC", color: "#001C44",padding:"20px",marginRight: "15px" }}
               >
                 For Companies
               </Button></Link>
               <Link to="/farmer" style={{marginLeft:"1px"}}><Button
                 size="lg"
-                style={{ backgroundColor: "#B5DEFC", color: "#001C44"}}
+                style={{ backgroundColor: "#B5DEFC", color: "#001C44", paddingTop:"20px",paddingBottom:"20px",paddingLeft:"27px",paddingRight:"27px",marginLeft: "15px"}}
               >
                 For Farmers
               </Button></Link>
@@ -419,11 +446,12 @@ const Home = () => {
                 data-aos="zoom-in"
                 data-aos-delay="400"
               >
-                <div className="member">
+                <div className="member" style={{height:"260px"}}>
                   <img
-                    src={require("../assets/img/dharmi.jpeg")}
+                    src={require("../assets/img/dharmi.png")}
                     className="img-fluid"
                     alt=""
+                    
                   />
                   <div className="member-info">
                     <div className="member-info-content">

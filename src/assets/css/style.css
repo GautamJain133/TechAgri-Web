@@ -1386,3 +1386,24 @@ body {
       padding: 3px 0;
     }
   }
+.ser{
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+  .ru{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    padding: 30px;
+    background-color: #18d26e;
+  }
+  .ru:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #21ae50;
+    transition: .5s ease-out;
+  }
+
+  .mm{
+    margin-left: -10px;
+  }

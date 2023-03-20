@@ -58,10 +58,11 @@ function App() {
 
         <Route path="/directions" element={<Directions />} />
         <Route path="/fertilizer" element={<Gautam />} />
+
         <Route path="/budgeting" element={<Budgeting />} />
-        <Route path="/budgeting" element={<Budgeting />} />
+
         <Route path="/Volunteering" element={<Volunteering />} />
-        <Route path="*" element={<Volunteering />} />
+        <Route path="*" element={<Signup />} />
       </Routes>
     </UserAuthContextProvider>
   );
