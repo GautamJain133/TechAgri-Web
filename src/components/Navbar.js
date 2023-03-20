@@ -5,6 +5,7 @@ import {Link, useNavigate} from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
 // import axios from 'axios';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { NavLink } from 'react-bootstrap';
 
 function Navbarhome() {
     const { logOut, user } = useUserAuth();
@@ -82,6 +83,8 @@ function Navbarhome() {
             ):(
             <Nav.Link><Link to="/login">Login</Link></Nav.Link>
             )}
+            <Nav.Link href="#home" style={{marginLeft:"500px",fontSize:"15px"}}><Link to="/directions">Food Bank Locator</Link></Nav.Link>
+            <Nav.Link href="http://127.0.0.1:5500/html_files/youtube_tut.html">Video Based Tutorials</Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>
