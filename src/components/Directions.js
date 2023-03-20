@@ -78,7 +78,7 @@ const Map = () => {
             .setPopup(
               new mapboxgl.Popup().setHTML(`<p>Your Location<br/>
               
-              total distance : ${distance} Km
+              total distance : ${distance.toPrecision(4)} Km
               
             
             </p > `)
