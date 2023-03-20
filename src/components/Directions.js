@@ -10,6 +10,7 @@ const Map = () => {
   const [map, setMap] = useState(null);
   const [userLocation, setUserLocation] = useState(null);
   const [destination, setDestination] = useState(null);
+  const [distance, setDistance] = useState(null);
 
   useEffect(() => {
     // initialize map
@@ -59,12 +60,29 @@ const Map = () => {
             map.removeSource("route");
           }
 
+          //const a = new mapboxgl.LngLat(userLocation);
+          //const b = new mapboxgl.LngLat(destination);
+          // console.log(userLocation.distanceTo(destination));
+          console.log("dsfsdfsd" + destination);
+          const a = new mapboxgl.LngLat(75.85009, 26.822399);
+          //const a = destination;
+          const b = new mapboxgl.LngLat(75.77481, 26.960785);
+
+          setDistance(a.distanceTo(b) / 1000);
+
           const marker = new mapboxgl.Marker({
             color: "chocolate",
           })
             .setLngLat([75.85009, 26.822399])
 
-            .setPopup(new mapboxgl.Popup().setHTML("<p>Your Location</p>"))
+            .setPopup(
+              new mapboxgl.Popup().setHTML(`<p>Your Location<br/>
+              
+              total distance : ${distance} Km
+              
+            
+            </p > `)
+            )
             .addTo(map);
 
           marker.togglePopup();
@@ -104,7 +122,7 @@ const Map = () => {
           console.log(error);
         });
     }
-  }, [userLocation, destination, map]);
+  }, [userLocation, destination, map, distance]);
 
   const handleDestinationChange = (event) => {
     setDestination(event.target.value);
@@ -122,7 +140,7 @@ const Map = () => {
           <option value="">--Nearby Foodbanks--</option>
           <option value="75.82477,26.915512">Jagatpura</option>
           <option value="75.816486,26.90042">Malviya Nagar</option>
-          <option value="75.588328,24.934589">VidhyaDhar Nagar</option>
+          <option value="75.77481,26.960785">VidhyaDhar Nagar</option>
           <option value="75.816298,26.88631">Mansarover</option>
           <option value="75.845437,26.830064">Sanganer</option>
         </select>
