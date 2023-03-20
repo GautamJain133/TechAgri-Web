@@ -3,9 +3,9 @@ import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "../Styles/directions.css";
 import Navbarhome from "./Navbar";
-
+require(dotenv).config();
 mapboxgl.accessToken =
-  "pk.eyJ1IjoiZ2F1dGFtamFpbiIsImEiOiJjbGZkdjlqMjcxMWdhM3Jtdm1kZDJlaHd4In0.Sp34ZhsaKMqc3xJ3BAexfg"; // replace with your Mapbox access token
+  MAPBOXTOKEN; // replace with your Mapbox access token
 
 const Map = () => {
   const [map, setMap] = useState(null);

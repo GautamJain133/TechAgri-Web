@@ -1,3 +1,4 @@
+require(dotenv).config();
 const express = require("express");
 const mongoose = require("mongoose");
 
@@ -7,8 +8,7 @@ const cropRouter = require("./routers/cropRouter");
 const farmerRouter = require("./routers/farmerrouter");
 const companyRouter = require("./routers/companyRouter");
 const PORT = 9000;
-const db =
-  "mongodb+srv://gautam:JB6Onx60hHqc6t6u@cluster0.004vsbm.mongodb.net/userdata?retryWrites=true&w=majority";
+const db = MONGO;
 
 console.log(PORT);
 const app = express();
