@@ -44,7 +44,9 @@ function Navbarhome() {
             >
               <NavDropdown.Item href="# ">My Profile</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="registration">Role</NavDropdown.Item>
+              <NavDropdown.Item href="src\components\Registration.js">
+                Role
+              </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#" onClick={handleLogout}>
                 Logout
