@@ -30,11 +30,9 @@ const Reg = () => {
       },
       header
     );
-    if(type===1){
+    if (type == 1) {
       navigate("/farmer");
-    }
-    else
-      navigate("/company");
+    } else navigate("/company");
   };
 
   const createToken = async () => {
@@ -51,7 +49,10 @@ const Reg = () => {
 
   return (
     <>
-      <div className="container reg_container" style={{width:"500px",marginLeft:"400px"}}>
+      <div
+        className="container reg_container"
+        style={{ width: "500px", marginLeft: "400px" }}
+      >
         <div className="role">
           <h5>Select your role</h5>
           <div className="input-field select_role">

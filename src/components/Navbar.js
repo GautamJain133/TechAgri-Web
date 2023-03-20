@@ -20,41 +20,6 @@ function Navbarhome() {
     }
   };
 
-  // const createToken = async () => {
-  //   const token = user && (await user.getIdToken());
-
-  //   const payloadHeader = {
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       "x-auth-token": `${token}`,
-  //     },
-  //   };
-  //   return payloadHeader;
-  // };
-
-  // const [name, setName] = useState("");
-
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault();
-  //   alert(`The name you entered was: ${name}`);
-  //   const header = await createToken();
-  //   console.log("header is " + header.headers["x-auth-token"]);
-
-  //   // console.log("hi" + header.headers["x-auth-token"]);
-
-  //   axios
-  //     .post(
-  //       "/user",
-  //       {
-  //         Name: name,
-  //       },
-  //       header
-  //     )
-  //     .then((response) => {
-  //       console.log("response received successfully");
-  //     });
-  // };
-
   return (
     <Navbar expand="lg" style={{ backgroundColor: "#B5DEFC", padding: "10px" }}>
       <Navbar.Brand
@@ -79,9 +44,7 @@ function Navbarhome() {
             >
               <NavDropdown.Item href="# ">My Profile</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="src\components\Registration.js">
-                Role
-              </NavDropdown.Item>
+              <NavDropdown.Item href="registration">Role</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#" onClick={handleLogout}>
                 Logout
