@@ -25,6 +25,7 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "",
     "react-scripts": "^5.0.1",
+    "universal-cookie": "^4.0.4",
     "web-vitals": ""
   },
   "scripts": {
